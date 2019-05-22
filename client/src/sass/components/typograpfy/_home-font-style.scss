@@ -1,5 +1,6 @@
 .home {
-  font-family: $font-4;
+  font-family: $font-1;
+
   &__header {
   }
 
@@ -8,6 +9,8 @@
     font-size: 2.3rem;
     text-transform: uppercase;
     font-weight: 600;
+    font-family: $font-6; // 6 i 12 su dobri
+    transition: all 0.5;
   }
 
   &__nav {
@@ -37,7 +40,7 @@
   }
 
   &__message {
-    font-family: $font-4;
+    font-family: $font-15;
     color: $primary-color;
     &--span {
       font-size: 3.6rem;
@@ -46,6 +49,10 @@
     &--h1 {
       font-size: 7rem;
       font-weight: 600;
+
+      &--span {
+        color: $black-color;
+      }
     }
   }
 }
