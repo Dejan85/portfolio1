@@ -1,36 +1,63 @@
 .home {
   display: flex;
   flex-direction: column;
-  height: 117vh;
+  height: 92rem;
   background-size: cover;
   background-repeat: no-repeat;
+  user-select: none;
 
-  -webkit-clip-path: polygon(41% 0, 100% 0, 100% 86%, 61.5% 100%, 0 91%, 0 0);
-  clip-path: polygon(41% 0, 100% 0, 100% 86%, 61.5% 100%, 0 91%, 0 0);
+  @include respond(tab-land) {
+    height: 72rem;
+  }
+
+  -webkit-clip-path: polygon(50% 0%, 100% 0, 100% 92%, 66% 100%, 0 90%, 0 0);
+  clip-path: polygon(50% 0%, 100% 0, 100% 92%, 66% 100%, 0 90%, 0 0);
 
   &__black-mask {
     position: absolute;
-    width: 61.5%;
-    height: 117vh;
-    background: $black-color;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    width: 61.6%;
+    height: 92rem;
+    background: rgba($black-color, 0.7);
     left: 0;
-    opacity: 0.7;
     z-index: 1;
 
-    -webkit-clip-path: polygon(41% 0, 100% 0, 100% 100%, 0 93%, 0 0);
-    clip-path: polygon(41% 0, 100% 0, 100% 100%, 0 93%, 0 0);
+    @include respond(tab-land) {
+      width: 60%;
+      height: 72rem;
+    }
+
+    @include respond(tab-port) {
+      width: 57%;
+    }
   }
+
   &__blue-mask {
     position: absolute;
-    width: 38.5%;
-    height: 117vh;
-    background: $primary-color;
+    display: flex;
+    flex-direction: column;
+    justify-items: flex-start;
+    width: 38.4%;
+    height: 92rem;
+    background: rgba($primary-color, 0.9);
     right: 0;
-    opacity: 0.8;
     z-index: 1;
 
-    -webkit-clip-path: polygon(41% 0, 100% 0, 100% 90%, 0 100%, 0 0);
-    clip-path: polygon(41% 0, 100% 0, 100% 90%, 0 100%, 0 0);
+    @include respond(tab-land) {
+      width: 40%;
+      height: 72rem;
+    }
+
+    @include respond(tab-port) {
+      width: 43%;
+    }
+
+    .home__item--background:hover {
+      background: lighten($black-color, 10%) !important;
+      color: white !important;
+    }
   }
 
   &__header {
@@ -38,14 +65,30 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 4rem 1rem;
-    z-index: 2;
+    padding-top: 4rem;
+    z-index: 10;
   }
 
-  &__logo {
+  .header-container {
+    max-width: 67.8rem;
+    width: 100%;
+    padding-left: 2rem;
+
+    @include respond(tab-land) {
+      max-width: 89rem;
+      width: 100%;
+    }
+
+    @include respond(tab-port) {
+      max-width: 66.5rem;
+      width: 100%;
+    }
   }
 
   &__nav {
+    @include respond(tab-port) {
+      display: none;
+    }
   }
 
   &__list {
@@ -54,38 +97,32 @@
 
   &__item {
     transition: all 0.5s;
+
     &:hover {
       background: darken($primary-color, 6%);
       color: white;
     }
-
-    &:hover:nth-of-type(1n + 5) {
-      background: lighten($black-color, 10%) !important;
-      color: white !important;
-    }
-
-    // &--background:hover {
-
-    // }
   }
 
   &__link {
     display: block;
     padding: 1.3rem 1.4rem;
+
+    @include respond(tab-land) {
+      padding: 1.5rem 1.6rem;
+    }
   }
 
   &__message {
-    position: relative;
-    margin-top: 25rem;
-    margin-left: 18rem;
-    align-self: center;
+    position: absolute;
+    top: 37rem;
     border-left: solid 1rem $primary-color;
-    padding-left: 1.5rem;
+    padding-right: 2.5rem;
+    padding-left: 4rem;
     line-height: 0.65;
     z-index: 2;
-    word-spacing: 2rem;
-    &--span {
-    }
+    height: 10rem;
+
     &--h1 {
       padding-top: 3rem;
     }

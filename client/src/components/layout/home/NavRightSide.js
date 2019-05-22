@@ -1,28 +1,28 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 
-const Nav = () => {
+const NavRightSide = () => {
   return (
     <nav className='home__nav'>
       <ul className='home__list'>
-        <li className='home__item'>
+        <li className='home__item home__item--background'>
           <Link className='home__link' to='/'>
-            Home
+            Skills
           </Link>
         </li>
-        <li className='home__item'>
+        <li className='home__item home__item--background'>
           <Link className='home__link' to='/'>
-            About
+            Portoflio
           </Link>
         </li>
-        <li className='home__item'>
+        <li className='home__item home__item--background'>
           <Link className='home__link' to='/'>
-            Services
+            Blog
           </Link>
         </li>
-        <li className='home__item'>
+        <li className='home__item home__item--background'>
           <Link className='home__link' to='/'>
-            Team
+            Contact
           </Link>
         </li>
       </ul>
@@ -30,4 +30,4 @@ const Nav = () => {
   );
 };
 
-export default Nav;
+export default NavRightSide;
