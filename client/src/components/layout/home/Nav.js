@@ -3,31 +3,47 @@ import { Link } from "react-router-dom";
 
 const Nav = () => {
   return (
-    <nav>
-      <ul>
-        <li>
-          <Link>Home</Link>
+    <nav className="home__nav">
+      <ul className="home__list">
+        <li className="home__item">
+          <Link className="home__link" to="/">
+            Home
+          </Link>
         </li>
-        <li>
-          <Link>About</Link>
+        <li className="home__item">
+          <Link className="home__link" to="/">
+            About
+          </Link>
         </li>
-        <li>
-          <Link>Services</Link>
+        <li className="home__item">
+          <Link className="home__link" to="/">
+            Services
+          </Link>
         </li>
-        <li>
-          <Link>Team</Link>
+        <li className="home__item">
+          <Link className="home__link" to="/">
+            Team
+          </Link>
         </li>
-        <li>
-          <Link>Skills</Link>
+        <li className="home__item home__item--background">
+          <Link className="home__link" to="/">
+            Skills
+          </Link>
         </li>
-        <li>
-          <Link>Portoflio</Link>
+        <li className="home__item home__item--background">
+          <Link className="home__link" to="/">
+            Portoflio
+          </Link>
         </li>
-        <li>
-          <Link>Blog</Link>
+        <li className="home__item home__item--background">
+          <Link className="home__link" to="/">
+            Blog
+          </Link>
         </li>
-        <li>
-          <Link>Contact</Link>
+        <li className="home__item home__item--background">
+          <Link className="home__link" to="/">
+            Contact
+          </Link>
         </li>
       </ul>
     </nav>

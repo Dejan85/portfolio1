@@ -1,0 +1,50 @@
+.home {
+  font-family: $font-4;
+  &__header {
+  }
+
+  &__logo {
+    color: $primary-color;
+    font-size: 2.3rem;
+    text-transform: uppercase;
+    font-weight: 600;
+  }
+
+  &__nav {
+  }
+
+  &__list {
+  }
+
+  &__item {
+    background: $primary-color;
+    color: $black-color;
+    text-decoration: none;
+    list-style-type: none;
+    font-size: 1.4rem;
+    font-weight: 600;
+
+    &--background {
+      background: $black-color !important;
+      color: $primary-color !important;
+    }
+  }
+
+  &__link {
+    list-style-type: none;
+    text-decoration: none;
+    color: inherit;
+  }
+
+  &__message {
+    font-family: $font-4;
+    &--span {
+      font-size: 3.6rem;
+      font-weight: 600;
+    }
+    &--h1 {
+      font-size: 8rem;
+      font-weight: 600;
+    }
+  }
+}
