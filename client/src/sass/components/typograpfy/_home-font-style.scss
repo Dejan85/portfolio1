@@ -38,12 +38,13 @@
 
   &__message {
     font-family: $font-4;
+    color: $primary-color;
     &--span {
       font-size: 3.6rem;
       font-weight: 600;
     }
     &--h1 {
-      font-size: 8rem;
+      font-size: 7rem;
       font-weight: 600;
     }
   }

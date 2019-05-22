@@ -12,11 +12,10 @@ class Home extends Component {
             <Logo />
             <Nav />
           </header>
-
-          <div className="home__message">
-            <span className="home__message--span">Heloo</span>
-            <h1 className="home__message--h1">I`m Javascipt developer</h1>
-          </div>
+        </div>
+        <div className="home__message">
+          <span className="home__message--span">Heloo</span>
+          <h1 className="home__message--h1">I`m Developer </h1>
         </div>
       </div>
     );

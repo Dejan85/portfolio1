@@ -1,0 +1,45 @@
+.home {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  background-size: cover;
+  background-repeat: no-repeat;
+
+  &__header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 4rem 1rem;
+  }
+
+  &__logo {
+  }
+
+  &__nav {
+  }
+
+  &__list {
+    display: flex;
+  }
+
+  &__item {
+    padding: 1.3rem 1.4rem;
+  }
+
+  &__link {
+  }
+
+  &__message {
+    margin-top: 25rem;
+    margin-left: 12rem;
+    align-self: center;
+    border-left: solid 1rem $primary-color;
+    padding-left: 1.5rem;
+    line-height: 0.65;
+    &--span {
+    }
+    &--h1 {
+      padding-top: 3rem;
+    }
+  }
+}
