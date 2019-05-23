@@ -14,6 +14,13 @@ $breakpoint argument choices:
 */
 
 @mixin respond($breakpoint) {
+  @if $breakpoint == 320 {
+    @media (max-width: 20em) {
+      // 320px  (480 / 16px)  16px je default vrednost em-a
+      @content;
+    }
+  }
+
   @if $breakpoint == 480 {
     @media (max-width: 30em) {
       // 480px  (480 / 16px)  16px je default vrednost em-a

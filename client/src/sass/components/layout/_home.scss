@@ -16,6 +16,12 @@
     clip-path: polygon(50% 0%, 100% 0, 100% 99%, 86% 100%, 0 90%, 0 0);
   }
 
+  @include respond(320) {
+    height: 40rem;
+    -webkit-clip-path: polygon(50% 0%, 100% 0, 100% 120%, 86% 100%, 0 90%, 0 0);
+    clip-path: polygon(50% 0%, 100% 0, 100% 140%, 86% 100%, 0 90%, 0 0);
+  }
+
   -webkit-clip-path: polygon(50% 0%, 100% 0, 100% 92%, 66% 100%, 0 90%, 0 0);
   clip-path: polygon(50% 0%, 100% 0, 100% 92%, 66% 100%, 0 90%, 0 0);
 
