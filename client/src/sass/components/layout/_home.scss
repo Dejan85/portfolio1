@@ -17,7 +17,6 @@
   }
 
   @include respond(420) {
-    height: 50rem;
     -webkit-clip-path: polygon(
       50% 0%,
       100% 0,
@@ -38,6 +37,10 @@
     align-items: flex-end;
     background: rgba($color-dark, 0.7);
     width: 60%;
+
+    @include respond(768) {
+      width: 50%;
+    }
   }
 
   &__header {
@@ -139,6 +142,10 @@
   &__right {
     background: rgba($color-primary, 0.8);
     width: 40%;
+
+    @include respond(768) {
+      width: 50%;
+    }
   }
 
   #nav-toggle {
