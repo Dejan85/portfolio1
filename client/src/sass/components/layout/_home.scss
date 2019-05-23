@@ -46,29 +46,30 @@
     margin-left: auto;
     justify-content: space-between;
     align-items: center;
-    width: 63rem;
+    width: 65rem;
     margin-top: 5.5rem;
     padding-left: 2rem;
 
     @include respond(tab-port) {
-      width: 70rem;
+      width: 72rem;
     }
 
     @include respond(768) {
-      width: 54rem;
+      width: 56rem;
     }
 
     @include respond(480) {
-      width: 33rem;
+      width: 35rem;
     }
 
     @include respond(420) {
-      width: 29.5rem;
+      width: 31.5rem;
     }
 
     &--right {
       position: relative;
       margin-left: 0;
+      padding-left: 0;
       width: 83%;
 
       @include respond(480) {
