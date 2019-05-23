@@ -6,6 +6,16 @@
   user-select: none;
   height: 92rem;
 
+  @include respond(768) {
+    height: 70rem;
+  }
+
+  @include respond(480) {
+    height: 60rem;
+    -webkit-clip-path: polygon(50% 0%, 100% 0, 100% 99%, 86% 100%, 0 90%, 0 0);
+    clip-path: polygon(50% 0%, 100% 0, 100% 99%, 86% 100%, 0 90%, 0 0);
+  }
+
   -webkit-clip-path: polygon(50% 0%, 100% 0, 100% 92%, 66% 100%, 0 90%, 0 0);
   clip-path: polygon(50% 0%, 100% 0, 100% 92%, 66% 100%, 0 90%, 0 0);
 
@@ -32,7 +42,10 @@
 
     @include respond(768) {
       width: 54rem;
-      // outline: 1px solid red;
+    }
+
+    @include respond(480) {
+      width: 33rem;
     }
 
     &--right {
@@ -40,7 +53,9 @@
       margin-left: 0;
       width: 83%;
 
-      // height: 3rem;
+      @include respond(480) {
+        width: 73%;
+      }
     }
   }
 
@@ -89,6 +104,13 @@
     padding-left: 2rem;
     padding-right: 3rem;
     margin-top: 27rem;
+
+    @include respond(480) {
+      margin-top: 20rem;
+
+      border-left: 0.6rem solid $color-primary;
+      height: 6.6rem;
+    }
   }
 
   &__right {

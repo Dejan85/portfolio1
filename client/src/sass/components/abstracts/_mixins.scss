@@ -14,9 +14,9 @@ $breakpoint argument choices:
 */
 
 @mixin respond($breakpoint) {
-  @if $breakpoint == phone {
-    @media (max-width: 37.5em) {
-      // 600px  (600 / 16px)  16px je default vrednost em-a
+  @if $breakpoint == 480 {
+    @media (max-width: 30em) {
+      // 480px  (480 / 16px)  16px je default vrednost em-a
       @content;
     }
   }
@@ -30,7 +30,7 @@ $breakpoint argument choices:
 
   @if $breakpoint == tab-port {
     @media (max-width: 62em) {
-      // 900px
+      // 980px
       @content;
     }
   }
