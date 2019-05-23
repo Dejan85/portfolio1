@@ -21,6 +21,13 @@ $breakpoint argument choices:
     }
   }
 
+  @if $breakpoint == 768 {
+    @media (max-width: 48em) {
+      // 768px
+      @content;
+    }
+  }
+
   @if $breakpoint == tab-port {
     @media (max-width: 62em) {
       // 900px

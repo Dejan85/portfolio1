@@ -10,7 +10,8 @@ class Home extends Component {
     super();
 
     this.state = {
-      active: false
+      active: false,
+      dropMenu: false
     };
   }
 

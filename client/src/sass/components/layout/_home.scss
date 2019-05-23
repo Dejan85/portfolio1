@@ -26,10 +26,19 @@
     width: 63rem;
     margin-top: 5.5rem;
 
+    @include respond(tab-port) {
+      width: 70rem;
+    }
+
+    @include respond(768) {
+      width: 54rem;
+      // outline: 1px solid red;
+    }
+
     &--right {
       position: relative;
       margin-left: 0;
-      width: 85%;
+      width: 83%;
 
       // height: 3rem;
     }
@@ -89,10 +98,8 @@
 
   #nav-toggle {
     display: none;
-  }
 
-  @include respond(tab-port) {
-    #nav-toggle {
+    @include respond(tab-port) {
       display: block !important;
       padding: 1rem 1.3rem;
     }
