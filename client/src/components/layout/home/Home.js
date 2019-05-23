@@ -30,7 +30,7 @@ class Home extends Component {
             <Nav />
           </header>
           <div className='home__message'>
-            <p className='home__p'>Hello `m </p>
+            <p className='home__p'>Hello I`m </p>
             <h1 className='home__h1'> Javascript</h1>
           </div>
         </div>

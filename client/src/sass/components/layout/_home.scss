@@ -35,7 +35,7 @@
     display: flex;
     flex-direction: column;
     align-items: flex-end;
-    background: rgba($color-dark, 0.7);
+    background: rgba($color-dark, 0.8);
     width: 60%;
 
     @include respond(768) {
@@ -50,7 +50,7 @@
     justify-content: space-between;
     align-items: center;
     width: 65rem;
-    margin-top: 5.5rem;
+    margin-top: 4.3rem;
     padding-left: 2rem;
 
     @include respond(tab-port) {
@@ -140,7 +140,7 @@
   }
 
   &__right {
-    background: rgba($color-primary, 0.8);
+    background: rgba($color-primary, 0.9);
     width: 40%;
 
     @include respond(768) {
