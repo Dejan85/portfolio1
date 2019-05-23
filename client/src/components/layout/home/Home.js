@@ -3,6 +3,7 @@ import React, { Component } from 'react';
 import Logo from './Logo';
 import Nav from './Nav';
 import NavRightSide from './NavRightSide';
+import DropMenu from './DropMenu';
 
 class Home extends Component {
   constructor() {
@@ -13,13 +14,26 @@ class Home extends Component {
         borderLeft: 'none',
         paddingLeft: '1.4rem',
         lineHeight: 1.34
-      }
+      },
+      dropMenu: false
     };
   }
+
+  dropMenu = () => {
+    this.setState({
+      dropMenu: !this.state.dropMenu
+    });
+  };
 
   render() {
     return (
       <div className='home'>
+        {this.state.dropMenu && <DropMenu />}
+        <a id='nav-toggle' href='#'>
+          <span />
+        </a>
+        <div className='home__menu-button' onClick={this.dropMenu} />
+
         <div className='home__black-mask'>
           <div className='header-container'>
             <header className='home__header'>

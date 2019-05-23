@@ -11,14 +11,6 @@
     font-weight: 600;
     font-family: $font-12; // 6 i 12 su dobri
     transition: all 0.5;
-
-    @include respond(tab-land) {
-      font-size: 3rem;
-    }
-
-    @include respond(tab-port) {
-      font-size: 4rem;
-    }
   }
 
   &__nav {
@@ -34,10 +26,6 @@
     list-style-type: none;
     font-size: 1.4rem;
     font-weight: 600;
-
-    @include respond(tab-land) {
-      font-size: 1.8rem;
-    }
 
     &--background {
       background: $black-color !important;
@@ -66,5 +54,10 @@
         color: $black-color;
       }
     }
+  }
+
+  &__menu-button {
+    font-size: 4.5rem;
+    color: $black-color;
   }
 }
