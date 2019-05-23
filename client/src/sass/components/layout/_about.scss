@@ -7,7 +7,32 @@
   @include line;
 
   &__p {
-    width: 80rem;
-    outline: 1px solid red;
+    margin: 0 auto;
+    width: 90%;
+  }
+
+  &__content {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 9rem;
+    padding-bottom: 10rem;
+  }
+
+  &__box {
+    display: flex;
+    width: 33.33%;
+    padding: 2rem;
+
+    &:nth-of-type(1n + 4) {
+      padding-top: 9rem;
+    }
+
+    &--container {
+      padding-left: 1.3rem;
+    }
+
+    &__p {
+      padding-top: 1rem;
+    }
   }
 }

@@ -1,0 +1,24 @@
+.about {
+  &__p {
+    color: $color-grey;
+    font-size: 1.8rem;
+    font-family: $font-4;
+    text-align: center;
+  }
+
+  &__icon {
+    font-size: 6rem;
+    color: $color-primary;
+  }
+
+  &__h3 {
+    color: $color-dark;
+    font-size: 2.3rem;
+    font-family: $font-4;
+  }
+
+  &__box__p {
+    color: $color-grey;
+    font-size: 1.4rem;
+  }
+}
