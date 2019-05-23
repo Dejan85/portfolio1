@@ -16,10 +16,17 @@
     clip-path: polygon(50% 0%, 100% 0, 100% 99%, 86% 100%, 0 90%, 0 0);
   }
 
-  @include respond(320) {
-    height: 40rem;
-    -webkit-clip-path: polygon(50% 0%, 100% 0, 100% 120%, 86% 100%, 0 90%, 0 0);
-    clip-path: polygon(50% 0%, 100% 0, 100% 140%, 86% 100%, 0 90%, 0 0);
+  @include respond(420) {
+    height: 50rem;
+    -webkit-clip-path: polygon(
+      50% 0%,
+      100% 0,
+      100% 100%,
+      100% 100%,
+      0 90%,
+      0 0
+    );
+    clip-path: polygon(50% 0%, 100% 0, 100% 100%, 100% 100%, 0 90%, 0 0);
   }
 
   -webkit-clip-path: polygon(50% 0%, 100% 0, 100% 92%, 66% 100%, 0 90%, 0 0);
@@ -41,6 +48,7 @@
     align-items: center;
     width: 63rem;
     margin-top: 5.5rem;
+    padding-left: 2rem;
 
     @include respond(tab-port) {
       width: 70rem;
@@ -52,6 +60,10 @@
 
     @include respond(480) {
       width: 33rem;
+    }
+
+    @include respond(420) {
+      width: 29.5rem;
     }
 
     &--right {
@@ -116,6 +128,10 @@
 
       border-left: 0.6rem solid $color-primary;
       height: 6.6rem;
+    }
+
+    @include respond(420) {
+      margin-top: 15rem;
     }
   }
 
