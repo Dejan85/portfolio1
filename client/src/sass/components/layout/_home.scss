@@ -1,155 +1,100 @@
 .home {
   display: flex;
-  flex-direction: column;
-  position: relative;
-  height: 92rem;
+  background-size: cover;
   background-size: cover;
   background-repeat: no-repeat;
   user-select: none;
-
-  @include respond(tab-land) {
-    height: 72rem;
-  }
+  height: 92rem;
 
   -webkit-clip-path: polygon(50% 0%, 100% 0, 100% 92%, 66% 100%, 0 90%, 0 0);
   clip-path: polygon(50% 0%, 100% 0, 100% 92%, 66% 100%, 0 90%, 0 0);
 
-  &__black-mask {
-    position: absolute;
+  &__left {
     display: flex;
     flex-direction: column;
     align-items: flex-end;
-    width: 61.6%;
-    height: 92rem;
-    background: rgba($black-color, 0.7);
-    left: 0;
-    z-index: 1;
-
-    @include respond(tab-land) {
-      width: 60%;
-      height: 72rem;
-    }
-
-    @include respond(tab-port) {
-      width: 57%;
-    }
-  }
-
-  &__blue-mask {
-    position: absolute;
-    display: flex;
-    flex-direction: column;
-    justify-items: flex-start;
-    width: 38.4%;
-    height: 92rem;
-    background: rgba($primary-color, 0.9);
-    right: 0;
-    z-index: 1;
-
-    @include respond(tab-land) {
-      width: 40%;
-      height: 72rem;
-    }
-
-    @include respond(tab-port) {
-      width: 43%;
-    }
-
-    .home__item--background:hover {
-      background: lighten($black-color, 10%) !important;
-      color: white !important;
-    }
+    background: rgba($color-dark, 0.7);
+    width: 60%;
   }
 
   &__header {
-    position: relative;
     display: flex;
-    align-items: center;
+    flex-wrap: wrap;
+    margin-left: auto;
     justify-content: space-between;
-    padding-top: 4rem;
-    z-index: 10;
-  }
+    align-items: center;
+    width: 63rem;
+    margin-top: 5.5rem;
 
-  .header-container {
-    max-width: 67.8rem;
-    width: 100%;
-    padding-left: 2rem;
+    &--right {
+      position: relative;
+      margin-left: 0;
+      width: 85%;
 
-    @include respond(tab-land) {
-      max-width: 75rem;
-      width: 100%;
-    }
-
-    @include respond(tab-port) {
-      max-width: 66.5rem;
-      width: 100%;
-    }
-  }
-
-  &__nav {
-    @include respond(tab-port) {
-      display: none;
+      // height: 3rem;
     }
   }
 
   &__list {
     display: flex;
+
+    @include respond(tab-port) {
+      display: none;
+
+      #nav-toggle {
+        display: block !important;
+      }
+    }
   }
 
+  @include btn;
+
   &__item {
+    list-style-type: none;
+  }
+
+  &__link {
+    display: flex;
+    padding: 1rem 1.3rem;
+    background: $color-primary;
     transition: all 0.5s;
 
     &:hover {
-      background: darken($primary-color, 6%);
+      background: darken($color-primary, 10%);
+      color: white;
+    }
+
+    &--right {
+      background: $color-dark;
+    }
+
+    &--right:hover {
+      background: lighten($color-dark, 10%);
       color: white;
     }
   }
 
-  &__link {
-    display: block;
-    padding: 1.3rem 1.4rem;
-
-    @include respond(tab-land) {
-      padding: 1.5rem 1.6rem;
-    }
-  }
-
   &__message {
-    position: absolute;
-    top: 37rem;
-    border-left: solid 1rem $primary-color;
-    padding-right: 2.5rem;
-    padding-left: 4rem;
-    line-height: 0.65;
-    z-index: 2;
+    border-left: 1rem solid $color-primary;
     height: 10rem;
-
-    &--h1 {
-      padding-top: 3rem;
-    }
+    padding-left: 2rem;
+    padding-right: 3rem;
+    margin-top: 27rem;
   }
 
-  &__menu-button {
+  &__right {
+    background: rgba($color-primary, 0.8);
+    width: 40%;
+  }
+
+  #nav-toggle {
     display: none;
   }
 
   @include respond(tab-port) {
-    &__menu-button {
-      display: flex;
-      position: relative;
-      justify-content: flex-end;
-      width: 95%;
-      z-index: 10000;
-      top: 2.5rem;
-      transition: all 2s;
+    #nav-toggle {
+      display: block !important;
+      padding: 1rem 1.3rem;
     }
-  }
-
-  .drop__menu {
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    background: red;
-    z-index: 6;
   }
 }

@@ -1,63 +1,39 @@
 .home {
-  font-family: $font-1;
-
-  &__header {
-  }
-
   &__logo {
-    color: $primary-color;
-    font-size: 2.3rem;
+    font-size: 2.2rem;
+    font-family: $font-12;
     text-transform: uppercase;
-    font-weight: 600;
-    font-family: $font-12; // 6 i 12 su dobri
-    transition: all 0.5;
-  }
-
-  &__nav {
-  }
-
-  &__list {
+    font-weight: 800;
+    color: $color-primary;
   }
 
   &__item {
-    background: $primary-color;
-    color: $black-color;
-    text-decoration: none;
-    list-style-type: none;
-    font-size: 1.4rem;
-    font-weight: 600;
-
-    &--background {
-      background: $black-color !important;
-      color: $primary-color !important;
-    }
+    font-size: 1.5rem;
+    font-weight: 400;
+    font-family: $font-4;
   }
 
   &__link {
-    list-style-type: none;
     text-decoration: none;
-    color: inherit;
+    color: $color-dark;
+
+    &--right {
+      color: $color-primary;
+    }
   }
 
   &__message {
     font-family: $font-15;
-    color: $primary-color;
-    &--span {
-      font-size: 3.6rem;
-      font-weight: 600;
-    }
-    &--h1 {
-      font-size: 7rem;
-      font-weight: 600;
-
-      &--span {
-        color: $black-color;
-      }
-    }
+    font-weight: 600;
+    line-height: 1.1;
+    color: $color-primary;
   }
 
-  &__menu-button {
-    font-size: 4.5rem;
-    color: $black-color;
+  &__p {
+    font-size: 3.6rem;
+  }
+
+  &__h1 {
+    font-size: 7rem;
   }
 }

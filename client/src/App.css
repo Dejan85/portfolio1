@@ -2,7 +2,7 @@
   background-image: url('../src/sass/images/3.jpg');
 }
 
-#nav-toggle span,
+/* #nav-toggle span,
 #nav-toggle span:before,
 #nav-toggle span:after {
   cursor: pointer;
@@ -38,4 +38,4 @@
 }
 #nav-toggle.active span:after {
   transform: rotate(-45deg);
-}
+} */
