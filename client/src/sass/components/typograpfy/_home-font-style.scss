@@ -38,6 +38,7 @@
 
   &__h1 {
     font-size: 7rem;
+
     @include respond(480) {
       font-size: 4rem;
     }

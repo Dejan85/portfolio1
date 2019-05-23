@@ -1,0 +1,13 @@
+.about {
+  user-select: none;
+  &__h2 {
+    @include h2;
+  }
+
+  @include line;
+
+  &__p {
+    width: 80rem;
+    outline: 1px solid red;
+  }
+}

@@ -101,3 +101,31 @@ $breakpoint argument choices:
     transform: rotate(-45deg);
   }
 }
+
+//global h2 style
+@mixin h2 {
+  font-size: 7rem;
+  font-family: $font-5; //5 je dobar
+  text-align: center;
+  padding-top: 9rem;
+  text-transform: uppercase;
+  color: $color-dark;
+}
+
+// Line
+@mixin line {
+  .line {
+    width: 20rem;
+    margin: 4rem auto;
+    &__thin {
+      border-bottom: 2px solid $color-primary;
+      width: 100%;
+    }
+
+    &__fat {
+      border-bottom: 6px solid $color-primary;
+      width: 27%;
+      margin: 0 auto;
+    }
+  }
+}

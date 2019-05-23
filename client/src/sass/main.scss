@@ -1,13 +1,15 @@
 // ABSTRACT
-@import "./components/abstracts/mixins";
-@import "./components/abstracts/variables";
+@import './components/abstracts/mixins';
+@import './components/abstracts/variables';
 
 // BASE
-@import "./components/base/base";
-@import "./components/base/utilityes";
+@import './components/base/base';
+@import './components/base/utilityes';
 
 // LAYOUT
-@import "./components/layout/home";
+@import './components/layout/home';
+@import './components/layout/about';
 
 // TYPOGRAPFY
-@import "./components/typograpfy/home-font-style";
+@import './components/typograpfy/home-font-style';
+@import './components/typograpfy/about-font-style';
