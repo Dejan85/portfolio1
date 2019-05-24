@@ -10,13 +10,13 @@ html {
   // This defines what 1rem is
   font-size: 62.5%; // 1rem = 10px (inace je 16px. 10 smo dobili tako sto smo 10px / 16px * 100 = 62.5%)
 
-  @include respond(tab-land) {
+  @include respond(1200) {
     // width <1200
     font-size: 56.25%; // 1 rem = 9 / 16 * 100 = 56.25%
   }
 
-  @include respond(tab-port) {
-    // width <900
+  @include respond(980) {
+    // width <980
     font-size: 50%; // 1 rem = 8 / 16 * 100 = 50%
   }
 
@@ -38,7 +38,7 @@ body {
   margin: 0 auto;
   // outline: 1px solid red;
 
-  @include respond(tab-land) {
+  @include respond(1200) {
     width: 95%;
   }
 }

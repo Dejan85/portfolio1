@@ -6,6 +6,10 @@
 
   @include line;
 
+  &__icon {
+    position: absolute;
+  }
+
   &__p {
     margin: 0 auto;
     width: 80%;
@@ -44,19 +48,19 @@
     }
 
     &--container {
-      padding-left: 1.3rem;
+      padding-left: 7.5rem;
 
-      @include respond(480) {
-        padding-left: 3rem;
+      @include respond(1200) {
+        padding-left: 12rem;
       }
     }
 
     &__p {
       padding-top: 1rem;
 
-      @include respond(480) {
-        padding-top: 4.5rem;
-      }
+      //   @include respond(480) {
+      //     padding-top: 4.5rem;
+      //   }
     }
   }
 }

@@ -54,7 +54,7 @@
     margin-top: 4.3rem;
     padding-left: 2rem;
 
-    @include respond(tab-port) {
+    @include respond(980) {
       width: 72rem;
     }
 
@@ -85,7 +85,7 @@
   &__list {
     display: flex;
 
-    @include respond(tab-port) {
+    @include respond(980) {
       display: none;
 
       #nav-toggle {
@@ -153,7 +153,7 @@
   #nav-toggle {
     display: none;
 
-    @include respond(tab-port) {
+    @include respond(980) {
       display: block !important;
       padding: 1rem 1.3rem;
     }

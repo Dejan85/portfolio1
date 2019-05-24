@@ -35,14 +35,14 @@ $breakpoint argument choices:
     }
   }
 
-  @if $breakpoint == tab-port {
+  @if $breakpoint == 980 {
     @media (max-width: 62em) {
       // 980px
       @content;
     }
   }
 
-  @if $breakpoint == tab-land {
+  @if $breakpoint == 1200 {
     @media (max-width: 75em) {
       // 1200px
       @content;
