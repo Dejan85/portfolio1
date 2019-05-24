@@ -4,21 +4,50 @@
     font-size: 1.8rem;
     font-family: $font-4;
     text-align: center;
+    font-weight: 400;
   }
 
   &__icon {
     font-size: 6rem;
     color: $color-primary;
+
+    @include respond(tab-land) {
+      font-size: 9rem;
+    }
+
+    @include respond(768) {
+      font-size: 10rem;
+    }
   }
 
   &__h3 {
     color: $color-dark;
     font-size: 2.3rem;
     font-family: $font-4;
+
+    @include respond(tab-land) {
+      font-size: 3rem;
+    }
+
+    @include respond(768) {
+      font-size: 4rem;
+    }
+
+    @include respond(480) {
+      font-size: 3.3rem;
+    }
   }
 
   &__box__p {
     color: $color-grey;
     font-size: 1.4rem;
+
+    @include respond(tab-land) {
+      font-size: 1.6rem;
+    }
+
+    @include respond(768) {
+      font-size: 1.9rem;
+    }
   }
 }
