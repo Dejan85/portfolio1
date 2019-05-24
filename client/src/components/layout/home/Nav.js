@@ -21,7 +21,7 @@ const Nav = () => {
       </li>
       <li className='home__item'>
         <Link className='home__link' to='/'>
-          Team
+          Works
         </Link>
       </li>
     </ul>

@@ -11,8 +11,7 @@
   }
 
   &__p {
-    margin: 0 auto;
-    width: 80%;
+    @include global-p;
   }
 
   &__content {
@@ -36,10 +35,9 @@
 
     @include respond(480) {
       width: 98%;
-    }
-
-    &:nth-of-type(1n + 2) {
-      padding-top: 6rem;
+      &:nth-of-type(1n + 2) {
+        padding-top: 6rem;
+      }
     }
 
     &--container {

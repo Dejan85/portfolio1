@@ -104,10 +104,11 @@ $breakpoint argument choices:
 
 //global h2 style
 @mixin h2 {
+  padding-top: 9rem;
+
   font-size: 6rem;
   font-family: $font-5; //5 je dobar
   text-align: center;
-  padding-top: 9rem;
   text-transform: uppercase;
   color: $color-dark;
 }
@@ -144,5 +145,49 @@ $breakpoint argument choices:
       border-bottom: 5px solid white;
       width: 20%;
     }
+  }
+}
+
+// global p
+@mixin global-p {
+  margin: 0 auto;
+  width: 80%;
+
+  color: $color-grey;
+  font-size: 1.8rem;
+  font-family: $font-4;
+  text-align: center;
+  font-weight: 400;
+}
+
+// card flip
+@mixin card {
+  &__front,
+  &__back {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    backface-visibility: hidden;
+    position: absolute;
+    transition: transform 0.6s linear;
+  }
+
+  &__front {
+    background: white;
+    border: 1px solid grey;
+    transform: perspective(600px) rotateY(0deg);
+  }
+
+  &__back {
+    background: green;
+    transform: perspective(600px) rotateY(180deg);
+  }
+
+  &:hover > &__front {
+    transform: perspective(600px) rotateY(-180deg);
+  }
+
+  &:hover > &__back {
+    transform: perspective(600px) rotateY(0deg);
   }
 }
