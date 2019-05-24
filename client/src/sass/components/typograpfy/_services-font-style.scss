@@ -1,0 +1,22 @@
+.services {
+  color: white;
+  font-family: $font-4;
+
+  &__h2 {
+    font-size: 3.6rem;
+    text-transform: uppercase;
+  }
+
+  &__icon {
+    font-size: 5rem;
+  }
+
+  &__h3 {
+    font-size: 2.3rem;
+    text-transform: uppercase;
+  }
+
+  &__p {
+    font-size: 1.1rem;
+  }
+}

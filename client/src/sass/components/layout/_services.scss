@@ -1,0 +1,56 @@
+.services {
+  display: flex;
+  height: 800px;
+  margin-top: 9rem;
+  background: $color-primary;
+
+  -webkit-clip-path: polygon(
+    49% 0,
+    100% 8%,
+    100% 91%,
+    56% 100%,
+    0 91%,
+    0 6%,
+    39% 0
+  );
+  clip-path: polygon(49% 0, 100% 8%, 100% 91%, 56% 100%, 0 91%, 0 6%, 39% 0);
+
+  &__content {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    // width: 86rem;
+    width: 54.5%;
+    margin-top: 2.2rem;
+    padding-right: 7rem;
+  }
+
+  @include line-2;
+
+  &__h2--container {
+    margin-top: 8rem;
+    padding-right: 11rem;
+  }
+
+  &__box {
+    display: flex;
+    padding-top: 5.5rem;
+    padding-right: 11rem;
+    width: 36.6rem;
+  }
+
+  &__h3,
+  &__p {
+    padding-left: 2rem;
+  }
+
+  &__p {
+    margin-top: 1rem;
+  }
+
+  &__decoration-div {
+    height: 100%;
+    width: 18rem;
+    background: $color-dark;
+  }
+}

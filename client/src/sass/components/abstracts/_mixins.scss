@@ -129,3 +129,20 @@ $breakpoint argument choices:
     }
   }
 }
+
+// Line
+@mixin line-2 {
+  .line {
+    width: 20rem;
+    margin-top: 2rem;
+    &__thin {
+      border-bottom: 2px solid white;
+      width: 70%;
+    }
+
+    &__fat {
+      border-bottom: 5px solid white;
+      width: 20%;
+    }
+  }
+}
