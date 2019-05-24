@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import img from '../../../sass/images/js.jpg';
 
 // components
 import Line from '../utilities/Line';
@@ -15,7 +16,7 @@ class Services extends Component {
 
           <div className='services__box'>
             <div className='services__icon'>
-              <i className='fas fa-desktop' />
+              <i className='fas fa-pager' />
             </div>
             <div className='services__box__container'>
               <h3 className='services__h3'>Static Page</h3>
@@ -28,7 +29,8 @@ class Services extends Component {
 
           <div className='services__box'>
             <div className='services__icon'>
-              <i className='fas fa-desktop' />
+              {/* <i className='fas fa-desktop' /> */}
+              <i className='fas fa-window-maximize' />
             </div>
             <div className='services__box__container'>
               <h3 className='services__h3'>Web App</h3>
@@ -41,7 +43,7 @@ class Services extends Component {
 
           <div className='services__box'>
             <div className='services__icon'>
-              <i className='fas fa-desktop' />
+              <i className='far fa-object-group' />
             </div>
             <div className='services__box__container'>
               <h3 className='services__h3'>Fullstack </h3>
@@ -52,7 +54,9 @@ class Services extends Component {
             </div>
           </div>
         </div>
-        <div className='services__decoration-div' />
+        <div className='services__decoration-div'>
+          {/* <img src={img} /> */}
+        </div>
       </div>
     );
   }

@@ -4,17 +4,6 @@
   margin-top: 9rem;
   background: $color-primary;
 
-  //   -webkit-clip-path: polygon(
-  //     49% 0,
-  //     100% 8%,
-  //     100% 91%,
-  //     56% 100%,
-  //     0 91%,
-  //     0 6%,
-  //     39% 0
-  //   );
-  //   clip-path: polygon(49% 0, 100% 8%, 100% 91%, 56% 100%, 0 91%, 0 6%, 39% 0);
-
   -webkit-clip-path: polygon(
     49% 0,
     100% 10%,
@@ -26,6 +15,34 @@
   );
   clip-path: polygon(49% 0, 100% 10%, 100% 89%, 60.5% 100%, 0 91%, 0 6%, 39% 0);
 
+  @include respond(1200) {
+    -webkit-clip-path: polygon(
+      100% 10%,
+      100% 89%,
+      67% 100%,
+      0 91%,
+      0 6%,
+      32% 0
+    );
+    clip-path: polygon(100% 10%, 100% 89%, 67% 100%, 0 91%, 0 6%, 32% 0);
+
+    height: 75rem;
+  }
+
+  @include respond(992) {
+    height: 80rem;
+  }
+
+  @include respond(768) {
+    height: 80rem;
+  }
+
+  @include respond(480) {
+    -webkit-clip-path: polygon(100% 3%, 100% 98%, 67% 100%, 0 96%, 0 1%, 12% 0);
+    clip-path: polygon(100% 3%, 100% 98%, 67% 100%, 0 96%, 0 1%, 12% 0);
+    height: 85rem;
+  }
+
   &__content {
     display: flex;
     flex-direction: column;
@@ -34,6 +51,15 @@
     width: 54.5%;
     margin-top: 2.2rem;
     padding-right: 7rem;
+
+    @include respond(1200) {
+      align-items: flex-start;
+      padding-left: 5rem;
+    }
+
+    @include respond(480) {
+      width: 100%;
+    }
   }
 
   @include line-2;
@@ -41,6 +67,14 @@
   &__h2--container {
     margin-top: 8rem;
     padding-right: 11rem;
+
+    @include respond(768) {
+      padding-right: 1px;
+    }
+
+    @include respond(480) {
+      padding-right: 1px;
+    }
   }
 
   &__box {
@@ -48,6 +82,18 @@
     padding-top: 5.5rem;
     padding-right: 11rem;
     width: 36.6rem;
+
+    @include respond(1200) {
+      width: 42rem;
+    }
+
+    @include respond(768) {
+      padding-right: 4rem;
+    }
+
+    @include respond(480) {
+      padding-right: 2rem;
+    }
   }
 
   &__h3,
@@ -57,11 +103,41 @@
 
   &__p {
     margin-top: 1rem;
+
+    @include respond(480) {
+      padding-top: 2rem;
+    }
   }
 
   &__decoration-div {
     height: 100%;
-    width: 18rem;
+    width: 33rem;
     background: $color-dark;
+
+    @include respond(768) {
+      width: 25rem;
+    }
+
+    @include respond(480) {
+      display: none;
+    }
+
+    // img {
+    //   margin-top: 14rem;
+    //   margin-left: -7rem;
+    //   width: 44rem;
+
+    //   transform: rotateX(70deg) rotateZ(20deg) translate3d(0, 0, 70px);
+
+    //   box-shadow: -60px 100px 20px 2px rgba(0, 0, 0, 0.4);
+    //   transition: all 0.5s;
+    //   transform-style: preserve-3d;
+    //   //   width: 100%;
+    // }
+
+    // img:hover {
+    //   transform: rotateX(0deg) rotateZ(0deg) translate3d(0, 0, 0);
+    //   box-shadow: none;
+    // }
   }
 }
