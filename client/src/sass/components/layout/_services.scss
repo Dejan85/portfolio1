@@ -1,19 +1,30 @@
 .services {
   display: flex;
-  height: 800px;
+  height: 70rem;
   margin-top: 9rem;
   background: $color-primary;
 
+  //   -webkit-clip-path: polygon(
+  //     49% 0,
+  //     100% 8%,
+  //     100% 91%,
+  //     56% 100%,
+  //     0 91%,
+  //     0 6%,
+  //     39% 0
+  //   );
+  //   clip-path: polygon(49% 0, 100% 8%, 100% 91%, 56% 100%, 0 91%, 0 6%, 39% 0);
+
   -webkit-clip-path: polygon(
     49% 0,
-    100% 8%,
-    100% 91%,
-    56% 100%,
+    100% 10%,
+    100% 89%,
+    60.5% 100%,
     0 91%,
     0 6%,
     39% 0
   );
-  clip-path: polygon(49% 0, 100% 8%, 100% 91%, 56% 100%, 0 91%, 0 6%, 39% 0);
+  clip-path: polygon(49% 0, 100% 10%, 100% 89%, 60.5% 100%, 0 91%, 0 6%, 39% 0);
 
   &__content {
     display: flex;
