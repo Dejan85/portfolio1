@@ -21,7 +21,7 @@ const Nav = () => {
       </li>
       <li className='home__item'>
         <Link className='home__link' to='/'>
-          Works
+          Popular
         </Link>
       </li>
     </ul>
