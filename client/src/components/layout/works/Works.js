@@ -1,6 +1,10 @@
 import React, { Component } from 'react';
+import { Link } from 'react-router-dom';
+
+//Images
 import pigGame from '../../../sass/images/pigGame.png';
 import colorGame from '../../../sass/images/colorGame.png';
+import toDoApp from '../../../sass/images/toDoApp.png';
 
 // components
 import Line from '../utilities/Line';
@@ -22,6 +26,37 @@ class Works extends Component {
                 <div className='works__card--mask' />
                 <img className='works__card--img' src={pigGame} />
               </div>
+
+              <h4 className='works__card__h4'>Pig Game</h4>
+              <p className='works__card__p'>
+                Ovo je mala React Js aplikacija. U pitanju je vec poznata igra
+                Pig Game. Dva igraca bacaju kockice i pokusavaju prvi da
+                dostignu odredjen broj pojena koji su prethodno rucno odredili.
+                Igra je pisana u React-u. Kao Context menager je koriscen
+                Contect api. Vise u ovoj aplikaciji mozete videti na njenoj
+                stranici.
+              </p>
+            </div>
+
+            <div className='works__card__back'>BACK</div>
+          </div>
+
+          <div className='works__card'>
+            <div className='works__card__front'>
+              <div className='works__card__img'>
+                <div className='works__card--mask' />
+                <img className='works__card--img' src={toDoApp} />
+              </div>
+
+              <h4 className='works__card__h4'>To Do App</h4>
+              <p className='works__card__p'>
+                Ovo je mala React Js aplikacija. U pitanju je vec poznata igra
+                Pig Game. Dva igraca bacaju kockice i pokusavaju prvi da
+                dostignu odredjen broj pojena koji su prethodno rucno odredili.
+                Igra je pisana u React-u. Kao Context menager je koriscen
+                Contect api. Vise u ovoj aplikaciji mozete videti na njenoj
+                stranici.
+              </p>
             </div>
 
             <div className='works__card__back'>BACK</div>
@@ -33,10 +68,25 @@ class Works extends Component {
                 <div className='works__card--mask' />
                 <img className='works__card--img' src={colorGame} />
               </div>
+
+              <h4 className='works__card__h4'>Color Game</h4>
+              <p className='works__card__p'>
+                Ovo je mala React Js aplikacija. U pitanju je vec poznata igra
+                Pig Game. Dva igraca bacaju kockice i pokusavaju prvi da
+                dostignu odredjen broj pojena koji su prethodno rucno odredili.
+                Igra je pisana u React-u. Kao Context menager je koriscen
+                Contect api. Vise u ovoj aplikaciji mozete videti na njenoj
+                stranici.
+              </p>
             </div>
 
             <div className='works__card__back'>BACK</div>
           </div>
+        </div>
+        <div className='works__discover'>
+          <Link className='works__discover--link' to='/'>
+            Discover all projects
+          </Link>
         </div>
       </div>
     );

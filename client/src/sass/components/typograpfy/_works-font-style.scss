@@ -1,2 +1,29 @@
 .works {
+  &__card {
+    &__h4 {
+      text-align: center;
+      font-size: 3rem;
+      font-family: $font-4;
+      color: $color-dark;
+    }
+
+    &__p {
+      text-align: justify;
+      font-size: 1.2rem;
+      color: $color-grey;
+      font-family: $font-4;
+      line-height: 1.7rem;
+    }
+  }
+
+  &__discover {
+    text-align: center;
+
+    &--link {
+      color: white;
+      font-family: $font-4;
+      text-decoration: none;
+      font-size: 2rem;
+    }
+  }
 }

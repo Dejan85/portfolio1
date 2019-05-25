@@ -21,7 +21,7 @@
 
   &__card {
     position: relative;
-    width: 32%;
+    width: 30%;
     height: 43rem;
 
     @include card;
@@ -29,6 +29,9 @@
     &__img {
       position: relative;
       width: 100%;
+
+      -webkit-clip-path: polygon(0 0, 100% 0, 100% 87%, 0 100%);
+      clip-path: polygon(0 0, 100% 0, 100% 87%, 0 100%);
     }
 
     &--img {
@@ -41,8 +44,31 @@
       position: absolute;
       width: 100%;
       height: 100%;
+      background: $color-dark;
+      opacity: 0.7;
+    }
+
+    &__h4 {
+      margin-top: 2.4rem;
+    }
+
+    &__p {
+      padding: 3.8rem 2rem;
+    }
+  }
+
+  &__discover {
+    margin-top: 10rem;
+
+    &--link {
+      display: inline-block;
+      padding: 1.2rem;
       background: $color-primary;
-      opacity: 0.5;
+      border-radius: 24px;
+
+      &:hover {
+        background: darken($color-primary, 10%);
+      }
     }
   }
 }
