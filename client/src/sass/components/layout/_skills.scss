@@ -1,0 +1,28 @@
+.skills {
+  display: flex;
+  flex-direction: column;
+  background-size: cover;
+  background-repeat: no-repeat;
+  user-select: none;
+  height: 92rem;
+
+  -webkit-clip-path: polygon(
+    50% 0%,
+    100% 14%,
+    100% 92%,
+    58% 100%,
+    0 93%,
+    0 11%
+  );
+  clip-path: polygon(50% 0%, 100% 14%, 100% 92%, 58% 100%, 0 93%, 0 4%);
+
+  @include line;
+
+  &__h2 {
+    @include h2;
+  }
+
+  &__p {
+    @include global-p;
+  }
+}

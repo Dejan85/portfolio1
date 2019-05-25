@@ -1,5 +1,9 @@
 .home {
-  background-image: url('../src/sass/images/3_compresovana.jpg');
+  background-image: url("../src/sass/images/3_compresovana.jpg");
+}
+
+.skills {
+  background-image: url("../src/sass/images/3_compresovana.jpg");
 }
 
 /* .works__card__img {

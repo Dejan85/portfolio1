@@ -71,6 +71,7 @@
 
   &__discover {
     margin-top: 10rem;
+    padding-bottom: 10rem;
 
     @include respond(480) {
       margin-top: 7rem;
