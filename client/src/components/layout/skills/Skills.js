@@ -3,45 +3,16 @@ import React, { Component } from 'react';
 // components
 import Line from '../utilities/Line';
 
+// methods
+import { percentageCircle } from '../utilities/percentageCircle';
+
 class Skills extends Component {
   componentDidMount() {
     const canvas = this.refs.canvas;
-    const canvas2 = this.refs.canvas;
-    const canvas3 = this.refs.canvas;
+    const canvas2 = this.refs.canvas2;
+    const canvas3 = this.refs.canvas3;
 
-    const ctx = canvas.getContext('2d');
-    const ctx2 = canvas2.getContext('2d');
-    const ctx3 = canvas3.getContext('2d');
-
-    let no = 0;
-    const pointToFill = 4.72;
-    const cw = ctx.canvas.width;
-    const ch = ctx.canvas.height;
-    let diff;
-
-    function fillCounter() {
-      diff = (no / 100) * Math.PI * 2 * 10;
-      ctx.clearRect(0, 0, cw, ch);
-      ctx.lineWidth = 15;
-      ctx.fillStyle = 'white';
-      ctx.padding = 10;
-      ctx.strokeStyle = '#29b6f6';
-      ctx.textAlign = 'center';
-      ctx.font = '3.7rem monospace';
-      ctx.fillText(no + '%', 165, 165);
-
-      ctx.beginPath();
-      ctx.arc(160, 160, 150, pointToFill, diff / 10 + pointToFill);
-
-      ctx.stroke();
-
-      if (no >= 80) {
-        clearTimeout(fill);
-      }
-
-      no++;
-    }
-    const fill = setInterval(fillCounter, 10);
+    percentageCircle(canvas, canvas2, canvas3);
   }
 
   render() {
