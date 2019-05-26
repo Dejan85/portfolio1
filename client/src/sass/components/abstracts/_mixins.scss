@@ -1,3 +1,46 @@
+// mixins
+
+@mixin border-radius($radius) {
+  -webkit-border-radius: $radius;
+  -moz-border-radius: $radius;
+  -ms-border-radius: $radius;
+  border-radius: $radius;
+}
+
+@mixin rotate($rotation) {
+  -webkit-transform: rotate($rotation);
+  -moz-transform: rotate($rotation);
+  -ms-transform: rotate($rotation);
+  -o-transform: rotate($rotation);
+  transform: rotate($rotation);
+}
+
+@mixin box-sizing($box-sizing) {
+  -webkit-box-sizing: $box-sizing;
+  -moz-box-sizing: $box-sizing;
+  box-sizing: $box-sizing;
+}
+@mixin transition-property($transition) {
+  -webkit-transition-property: $transition;
+  -moz-transition-property: $transition;
+  -o-transition-property: $transition;
+  transition-property: $transition;
+}
+
+@mixin transition-duration($duration) {
+  -webkit-transition-duration: $duration;
+  -moz-transition-duration: $duration;
+  -o-transition-duration: $duration;
+  transition-duration: $duration;
+}
+
+@mixin transition-timing-function($timing) {
+  -webkit-transition-timing-function: $timing;
+  -moz-transition-timing-function: $timing;
+  -o-transition-timing-function: $timing;
+  transition-timing-function: $timing;
+}
+
 // media query manager
 
 /*
@@ -152,9 +195,10 @@ $breakpoint argument choices:
 @mixin global-p {
   margin: 0 auto;
   width: 80%;
+  // width: 80rem;
 
   color: $color-grey;
-  font-size: 1.8rem;
+  font-size: 1.6rem;
   font-family: $font-4;
   text-align: center;
   font-weight: 400;

@@ -1,28 +1,212 @@
 .skills {
-  display: flex;
-  flex-direction: column;
+  position: relative;
   background-size: cover;
   background-repeat: no-repeat;
   user-select: none;
   height: 92rem;
 
+  &__mask {
+    position: absolute;
+    background: $color-dark;
+    opacity: 0.8;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+  }
+
   -webkit-clip-path: polygon(
-    50% 0%,
-    100% 14%,
-    100% 92%,
-    58% 100%,
-    0 93%,
-    0 11%
+    49% 0,
+    100% 10%,
+    100% 89%,
+    60.5% 100%,
+    0 91%,
+    0 6%,
+    39% 0
   );
-  clip-path: polygon(50% 0%, 100% 14%, 100% 92%, 58% 100%, 0 93%, 0 4%);
+  clip-path: polygon(49% 0, 100% 10%, 100% 93%, 60.5% 100%, 0 94%, 0 6%, 39% 0);
 
   @include line;
 
   &__h2 {
+    color: white !important;
     @include h2;
   }
 
   &__p {
+    color: rgba(255, 255, 255, 0.8) !important;
     @include global-p;
+  }
+
+  .skills__content {
+    display: flex;
+    justify-content: center;
+    margin-top: 8rem;
+  }
+
+  &__box {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 30%;
+    color: white;
+  }
+
+  &__progress {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 6rem solid rgba(33, 33, 33, 0.7);
+
+    border-radius: 50%;
+    width: 24rem;
+    height: 24rem;
+
+    &--p {
+    }
+
+    &--border {
+      width: 100%;
+      height: 100%;
+      position: absolute;
+      border-radius: 50%;
+      border: 7px solid $color-primary;
+      // clip: rect(20px, auto, auto, auto);
+      clip-path: inset(10px 0px 0px 0px);
+      transform: rotate(20deg);
+    }
+  }
+}
+
+// CIRCLE
+// classes 2 extend
+.rect-auto {
+  clip: rect(auto, auto, auto, auto);
+}
+
+.pie {
+  position: absolute;
+  border: $circle-width solid $primary-color;
+  width: 1 - (2 * $circle-width);
+  height: 1 - (2 * $circle-width);
+  clip: rect(0em, 0.5em, 1em, 0em);
+  border-radius: 50%;
+  @include rotate(0deg);
+}
+
+.pie-fill {
+  @include rotate(180deg);
+}
+
+// main
+.c100 {
+  *,
+  *:before,
+  *:after {
+    @include box-sizing(content-box);
+  }
+  position: relative;
+  font-size: 120px;
+  width: 1em;
+  height: 1em;
+  border-radius: 50%;
+  float: left;
+  margin: 0 0.1em 0.1em 0;
+  background-color: $secondary-color;
+  // center circle to its parent
+  &.center {
+    float: none;
+    margin: 0 auto;
+  }
+  // bigger size
+  &.big {
+    font-size: 24rem;
+  }
+  // smaller size
+  &.small {
+    font-size: 80px;
+  }
+  // centered value inside circle
+  > span {
+    position: absolute;
+    width: 100%;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 5em;
+    line-height: 5em;
+    font-size: 0.2em;
+    color: $secondary-color;
+    display: block;
+    text-align: center;
+    white-space: nowrap;
+    @include transition-property(all);
+    @include transition-duration(0.2s);
+    @include transition-timing-function(ease-out);
+  }
+  // background inside the circle
+  // &:after {
+  //   position: absolute;
+  //   top: $circle-width;
+  //   left: $circle-width;
+  //   display: block;
+  //   content: ' ';
+  //   border-radius: 50%;
+  //   background-color: $bg-color;
+  //   width: 1 - (2 * $circle-width);
+  //   height: 1 - (2 * $circle-width);
+  //   @include transition-property(all);
+  //   @include transition-duration(0.2s);
+  //   @include transition-timing-function(ease-in);
+  // }
+  // the slice (mask)
+  .slice {
+    position: absolute;
+    width: 1em;
+    height: 1em;
+    clip: rect(0em, 1em, 1em, 0.5em);
+  }
+  // circle to show the status
+  .bar {
+    @extend .pie;
+  }
+  // loop to create all needed elements automatically
+  @for $i from 51 through 100 {
+    &.p#{$i} {
+      & .slice {
+        @extend .rect-auto;
+      }
+      &.bar:after {
+        @extend .pie-fill;
+      }
+      & .fill {
+        @extend .pie;
+        @extend .pie-fill;
+      }
+    }
+  }
+  // loop to rotate all 100 circles
+  @for $i from 1 through 100 {
+    &.p#{$i} .bar {
+      $degs: (360/100 * $i);
+      @include rotate(180deg);
+    }
+  }
+  // hover styles
+  &:hover {
+    cursor: default;
+    > span {
+      width: 3.33em;
+      line-height: 3.33em;
+      font-size: 0.3em;
+      color: $primary-color;
+    }
+    &:after {
+      top: $circle-width-hover;
+      left: $circle-width-hover;
+      width: 1 - (2 * $circle-width-hover);
+      height: 1 - (2 * $circle-width-hover);
+    }
   }
 }

@@ -6,6 +6,10 @@ import pigGame from '../../../sass/images/pigGame.png';
 import colorGame from '../../../sass/images/colorGame.png';
 import toDoApp from '../../../sass/images/toDoApp.png';
 
+import pigGame_grey from '../../../sass/images/pigGame_grey.jpg';
+import colorGame_grey from '../../../sass/images/colorGame_grey.jpg';
+import toDoApp_grey from '../../../sass/images/toDoApp_grey.jpg';
+
 // components
 import Line from '../utilities/Line';
 
@@ -24,7 +28,11 @@ class Works extends Component {
             <div className='works__card__front'>
               <div className='works__card__img'>
                 <div className='works__card--mask' />
-                <img className='works__card--img' src={pigGame} />
+                <img
+                  className='works__card--img'
+                  src={pigGame_grey}
+                  alt='slika'
+                />
               </div>
 
               <h4 className='works__card__h4'>Pig Game</h4>
@@ -45,10 +53,15 @@ class Works extends Component {
             <div className='works__card__front'>
               <div className='works__card__img'>
                 <div className='works__card--mask' />
-                <img className='works__card--img' src={toDoApp} />
+                <img
+                  className='works__card--img'
+                  src={toDoApp_grey}
+                  alt='slika'
+                />
               </div>
 
               <h4 className='works__card__h4'>To Do App</h4>
+              <div />
               <p className='works__card__p'>
                 Ovo je mala React Js aplikacija. U pitanju je vec poznata igra
                 Pig Game. Dva igraca bacaju kockice i pokusavaju prvi da
@@ -66,7 +79,11 @@ class Works extends Component {
             <div className='works__card__front'>
               <div className='works__card__img'>
                 <div className='works__card--mask' />
-                <img className='works__card--img' src={colorGame} />
+                <img
+                  className='works__card--img'
+                  src={colorGame_grey}
+                  alt='slika'
+                />
               </div>
 
               <h4 className='works__card__h4'>Color Game</h4>

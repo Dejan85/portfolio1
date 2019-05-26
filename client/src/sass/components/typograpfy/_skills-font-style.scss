@@ -1,2 +1,9 @@
 .skills {
+  &__progress {
+    &--p {
+      color: white;
+      font-size: 4rem;
+      font-family: $font-4;
+    }
+  }
 }
