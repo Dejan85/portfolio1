@@ -5,6 +5,26 @@
   user-select: none;
   height: 92rem;
 
+  @include respond(1200) {
+    height: 110rem;
+
+    -webkit-clip-path: polygon(
+      100% 10%,
+      100% 89%,
+      67% 100%,
+      0 91%,
+      0 6%,
+      32% 0
+    );
+    clip-path: polygon(100% 10%, 100% 89%, 67% 100%, 0 91%, 0 6%, 32% 0);
+  }
+
+  @include respond(768) {
+    height: 420rem;
+    -webkit-clip-path: polygon(100% 3%, 100% 98%, 67% 100%, 0 96%, 0 1%, 12% 0);
+    clip-path: polygon(100% 3%, 100% 98%, 67% 100%, 0 96%, 0 1%, 12% 0);
+  }
+
   &__mask {
     position: absolute;
     background: $color-dark;
@@ -35,12 +55,21 @@
   &__p {
     color: rgba(255, 255, 255, 0.8) !important;
     @include global-p;
+
+    @include respond(768) {
+      padding-bottom: 5rem;
+    }
   }
 
   .skills__content {
     display: flex;
     justify-content: center;
     margin-top: 8rem;
+
+    @include respond(768) {
+      flex-direction: column;
+      width: 100%;
+    }
   }
 
   &__box {
@@ -50,6 +79,19 @@
     align-items: center;
     width: 30%;
     color: white;
+    // outline: 1px solid yellow;
+
+    @include respond(1200) {
+      width: 33.33%;
+    }
+
+    @include respond(768) {
+      width: 100%;
+
+      &:not(:nth-of-type(1)) {
+        margin-top: 55rem;
+      }
+    }
   }
 
   &__progress {
@@ -57,6 +99,25 @@
     border-radius: 50%;
     width: 24rem;
     height: 24rem;
+
+    @include respond(1200) {
+      border: 10rem solid rgba(33, 33, 33, 0.7);
+      width: 38rem;
+      height: 38rem;
+    }
+
+    @include respond(980) {
+      border: 10rem solid rgba(33, 33, 33, 0.7);
+      width: 34rem;
+      height: 34rem;
+      // outline: 1px solid red;
+    }
+
+    @include respond(768) {
+      border: 19rem solid rgba(33, 33, 33, 0.7);
+      width: 64rem;
+      height: 64rem;
+    }
   }
 
   &__canvas {
@@ -64,6 +125,21 @@
     z-index: 100;
     width: 25.5rem;
     height: 25.5rem;
+
+    @include respond(1200) {
+      width: 40.5rem;
+      height: 40.5rem;
+    }
+
+    @include respond(980) {
+      width: 36.5rem;
+      height: 36.5rem;
+    }
+
+    @include respond(768) {
+      width: 68.5rem;
+      height: 68.5rem;
+    }
   }
 
   &__description {
@@ -80,16 +156,51 @@
 
     &__p {
       width: 17rem;
+
+      @include respond(1200) {
+        width: 25rem;
+      }
+    }
+
+    @include respond(1200) {
+      width: 38rem;
+      height: 38rem;
+      margin-top: 28rem;
+    }
+
+    @include respond(980) {
+      width: 34rem;
+      height: 34rem;
+      margin-top: 24rem;
+    }
+
+    @include respond(768) {
+      width: 64rem;
+      height: 64rem;
+      margin-top: 45rem;
     }
   }
 
   &__h5 {
     margin-top: 4rem;
+
+    @include respond(1200) {
+      margin-top: 7rem;
+    }
+
+    @include respond(980) {
+      margin-top: 8rem;
+    }
   }
 
   &__line {
     border-top: 1.8px solid $color-primary;
     width: 2rem;
     margin: 1.4rem 0;
+
+    @include respond(1200) {
+      width: 2.5rem;
+      margin: 1.7rem 0;
+    }
   }
 }
