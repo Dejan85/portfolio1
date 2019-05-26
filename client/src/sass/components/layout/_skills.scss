@@ -20,9 +20,9 @@
   }
 
   @include respond(768) {
-    height: 420rem;
-    -webkit-clip-path: polygon(100% 3%, 100% 98%, 67% 100%, 0 96%, 0 1%, 12% 0);
-    clip-path: polygon(100% 3%, 100% 98%, 67% 100%, 0 96%, 0 1%, 12% 0);
+    height: 400rem;
+    -webkit-clip-path: polygon(30% 0, 100% 1%, 100% 99%, 69% 100%, 0 99%, 0 1%);
+    clip-path: polygon(30% 0, 100% 1%, 100% 99.5%, 69% 100%, 0 99%, 0 1%);
   }
 
   &__mask {
