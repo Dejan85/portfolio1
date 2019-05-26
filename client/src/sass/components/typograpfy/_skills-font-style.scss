@@ -1,9 +1,15 @@
 .skills {
-  &__progress {
-    &--p {
-      color: white;
-      font-size: 4rem;
-      font-family: $font-4;
+  &__description {
+    &__p {
+      font-size: 1.3rem;
+      font-family: $font-5;
+      text-align: center;
     }
+  }
+
+  &__h5 {
+    font-size: 1.8rem;
+    font-family: $font-4;
+    letter-spacing: 0.1rem;
   }
 }

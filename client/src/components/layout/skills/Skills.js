@@ -36,6 +36,14 @@ class Skills extends Component {
               className='skills__canvas'
             />
             <div className='skills__progress' />
+            <div className='skills__description'>
+              <h5 className='skills__h5'>Html/Css</h5>
+              <div className='skills__line' />
+              <p className='skills__description__p'>
+                This crash course in layers reveals or shows you in photoshop
+                and create wonders in graphics industry...
+              </p>
+            </div>
           </div>
 
           <div className='skills__box'>
@@ -46,6 +54,14 @@ class Skills extends Component {
               className='skills__canvas'
             />
             <div className='skills__progress' />
+            <div className='skills__description'>
+              <h5 className='skills__h5'>Javascript/React</h5>
+              <div className='skills__line' />
+              <p className='skills__description__p'>
+                This crash course in layers reveals or shows you in photoshop
+                and create wonders in graphics industry...
+              </p>
+            </div>
           </div>
 
           <div className='skills__box'>
@@ -56,6 +72,14 @@ class Skills extends Component {
               className='skills__canvas'
             />
             <div className='skills__progress' />
+            <div className='skills__description'>
+              <h5 className='skills__h5'>Node/Mongo</h5>
+              <div className='skills__line' />
+              <p className='skills__description__p'>
+                This crash course in layers reveals or shows you in photoshop
+                and create wonders in graphics industry...
+              </p>
+            </div>
           </div>
         </div>
       </div>

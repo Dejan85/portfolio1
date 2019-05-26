@@ -21,7 +21,7 @@ export const percentageCircle = (canvas, canvas2, canvas3) => {
     function fillCounter() {
       diff = (no / 100) * Math.PI * 2 * 10;
       ctx.clearRect(0, 0, cw, ch);
-      ctx.lineWidth = 15;
+      ctx.lineWidth = 8;
       ctx.fillStyle = 'white';
       ctx.padding = 10;
       ctx.strokeStyle = '#29b6f6';
