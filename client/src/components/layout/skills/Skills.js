@@ -6,7 +6,13 @@ import Line from '../utilities/Line';
 class Skills extends Component {
   componentDidMount() {
     const canvas = this.refs.canvas;
+    const canvas2 = this.refs.canvas;
+    const canvas3 = this.refs.canvas;
+
     const ctx = canvas.getContext('2d');
+    const ctx2 = canvas2.getContext('2d');
+    const ctx3 = canvas3.getContext('2d');
+
     let no = 0;
     const pointToFill = 4.72;
     const cw = ctx.canvas.width;
@@ -18,23 +24,24 @@ class Skills extends Component {
       ctx.clearRect(0, 0, cw, ch);
       ctx.lineWidth = 15;
       ctx.fillStyle = 'white';
+      ctx.padding = 10;
       ctx.strokeStyle = '#29b6f6';
       ctx.textAlign = 'center';
-      ctx.font = '25px monospace';
-      ctx.fillText(no, 100, 110);
+      ctx.font = '3.7rem monospace';
+      ctx.fillText(no + '%', 165, 165);
 
       ctx.beginPath();
-      ctx.arc(100, 100, 120, pointToFill, diff / 10 + pointToFill);
+      ctx.arc(160, 160, 150, pointToFill, diff / 10 + pointToFill);
 
       ctx.stroke();
 
-      if (no >= 100) {
+      if (no >= 80) {
         clearTimeout(fill);
       }
 
       no++;
     }
-    const fill = setInterval(fillCounter, 50);
+    const fill = setInterval(fillCounter, 10);
   }
 
   render() {
@@ -50,46 +57,35 @@ class Skills extends Component {
           </p>
         </div>
         <div className='skills__content container'>
-          <canvas ref='canvas' width={440} height={440} />
-
-          {/* <div className='skills__box'>
-            <div className='skills__progress'>
-              <div className='skills__progress--border' />
-              <p className='skills__progress--p'>90%</p>
-            </div>
-          </div> */}
-
-          {/* <div className='skills__box'>
-            <div className='skills__progress--border'>
-              <div className='skills__progress'>
-                <p className='skills__progress--p'>70%</p>
-              </div>
-            </div>
-            <div className='skills__description'>
-              <h5 className='skills__h5'>Javascript/React</h5>
-              <div className='skills__line' />
-              <p className='skills__description--p'>
-                This crash course in layers reveals or shows you in photoshop
-                and create wonders in graphics industry...
-              </p>
-            </div>
+          <div className='skills__box'>
+            <canvas
+              ref='canvas'
+              width={320}
+              height={320}
+              className='skills__canvas'
+            />
+            <div className='skills__progress' />
           </div>
 
           <div className='skills__box'>
-            <div className='skills__progress--border'>
-              <div className='skills__progress'>
-                <p className='skills__progress--p'>20%</p>
-              </div>
-            </div>
-            <div className='skills__description'>
-              <h5 className='skills__h5'>Node/Mongo</h5>
-              <div className='skills__line' />
-              <p className='skills__description--p'>
-                This crash course in layers reveals or shows you in photoshop
-                and create wonders in graphics industry...
-              </p>
-            </div>
-          </div> */}
+            <canvas
+              ref='canvas2'
+              width={320}
+              height={320}
+              className='skills__canvas'
+            />
+            <div className='skills__progress' />
+          </div>
+
+          <div className='skills__box'>
+            <canvas
+              ref='canvas3'
+              width={320}
+              height={320}
+              className='skills__canvas'
+            />
+            <div className='skills__progress' />
+          </div>
         </div>
       </div>
     );
