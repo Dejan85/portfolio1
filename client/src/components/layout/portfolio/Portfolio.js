@@ -11,6 +11,7 @@ import pigGame_grey from '../../../sass/images/pigGame_grey.jpg';
 import colorGame_grey from '../../../sass/images/colorGame_grey.jpg';
 import toDoApp_grey from '../../../sass/images/toDoApp_grey.jpg';
 
+import preview from '../../../sass/images/preview.svg';
 //components
 import Line from '../utilities/Line';
 
@@ -65,14 +66,30 @@ class Portfolio extends Component {
           <div className='portfolio__projects'>
             <div className='portfolio__box box-1'>
               <div className='portfolio__box--mask opacity'>
-                <p>Live</p>
+                <div className='portfolio__box--btn'>
+                  <i className='far fa-eye portfolio__box--icon' />
+                  <p className='portfolio__box--p'>Preview</p>
+                </div>
+
+                <div className='portfolio__box--btn'>
+                  <i className='fas fa-info portfolio__box--icon' />
+                  <p className='portfolio__box--p'>Description</p>
+                </div>
               </div>
               <img src={pigGame} alt='slika' />
             </div>
 
             <div className='portfolio__box box-2'>
               <div className='portfolio__box--mask opacity'>
-                <p>Live</p>
+                <div className='portfolio__box--btn'>
+                  <i className='far fa-eye portfolio__box--icon' />
+                  <p className='portfolio__box--p'>Preview</p>
+                </div>
+
+                <div className='portfolio__box--btn'>
+                  <i className='fas fa-info portfolio__box--icon' />
+                  <p className='portfolio__box--p'>Description</p>
+                </div>
               </div>
 
               <img src={bankApp} alt='slika' />
@@ -80,7 +97,15 @@ class Portfolio extends Component {
 
             <div className='portfolio__box box-3'>
               <div className='portfolio__box--mask opacity'>
-                <p>Live</p>
+                <div className='portfolio__box--btn'>
+                  <i className='far fa-eye portfolio__box--icon' />
+                  <p className='portfolio__box--p'>Preview</p>
+                </div>
+
+                <div className='portfolio__box--btn'>
+                  <i className='fas fa-info portfolio__box--icon' />
+                  <p className='portfolio__box--p'>Description</p>
+                </div>
               </div>
 
               <img src={toDoApp} alt='slika' />
@@ -88,7 +113,15 @@ class Portfolio extends Component {
 
             <div className='portfolio__box box-4'>
               <div className='portfolio__box--mask opacity'>
-                <p>Live</p>
+                <div className='portfolio__box--btn'>
+                  <i className='far fa-eye portfolio__box--icon' />
+                  <p className='portfolio__box--p'>Preview</p>
+                </div>
+
+                <div className='portfolio__box--btn'>
+                  <i className='fas fa-info portfolio__box--icon' />
+                  <p className='portfolio__box--p'>Description</p>
+                </div>
               </div>
 
               <img src={node} alt='slika' />
@@ -96,7 +129,15 @@ class Portfolio extends Component {
 
             <div className='portfolio__box box-5'>
               <div className='portfolio__box--mask opacity'>
-                <p>Live</p>
+                <div className='portfolio__box--btn'>
+                  <i className='far fa-eye portfolio__box--icon' />
+                  <p className='portfolio__box--p'>Preview</p>
+                </div>
+
+                <div className='portfolio__box--btn'>
+                  <i className='fas fa-info portfolio__box--icon' />
+                  <p className='portfolio__box--p'>Description</p>
+                </div>
               </div>
 
               <img src={colorGame} alt='slika' />
@@ -104,7 +145,15 @@ class Portfolio extends Component {
 
             <div className='portfolio__box box-6'>
               <div className='portfolio__box--mask opacity'>
-                <p>Live</p>
+                <div className='portfolio__box--btn'>
+                  <i className='far fa-eye portfolio__box--icon' />
+                  <p className='portfolio__box--p'>Preview</p>
+                </div>
+
+                <div className='portfolio__box--btn'>
+                  <i className='fas fa-info portfolio__box--icon' />
+                  <p className='portfolio__box--p'>Description</p>
+                </div>
               </div>
 
               <img src={toDoApp} alt='slika' />
@@ -112,7 +161,15 @@ class Portfolio extends Component {
 
             <div className='portfolio__box box-7'>
               <div className='portfolio__box--mask opacity'>
-                <p>Live</p>
+                <div className='portfolio__box--btn'>
+                  <i className='far fa-eye portfolio__box--icon' />
+                  <p className='portfolio__box--p'>Preview</p>
+                </div>
+
+                <div className='portfolio__box--btn'>
+                  <i className='fas fa-info portfolio__box--icon' />
+                  <p className='portfolio__box--p'>Description</p>
+                </div>
               </div>
 
               <img src={colorGame_grey} alt='slika' />
@@ -120,7 +177,15 @@ class Portfolio extends Component {
 
             <div className='portfolio__box box-8'>
               <div className='portfolio__box--mask opacity'>
-                <p>Live</p>
+                <div className='portfolio__box--btn'>
+                  <i className='far fa-eye portfolio__box--icon' />
+                  <p className='portfolio__box--p'>Preview</p>
+                </div>
+
+                <div className='portfolio__box--btn'>
+                  <i className='fas fa-info portfolio__box--icon' />
+                  <p className='portfolio__box--p'>Description</p>
+                </div>
               </div>
               <img src={pigGame_grey} alt='slika' />
             </div>

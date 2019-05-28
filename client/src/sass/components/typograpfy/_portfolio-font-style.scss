@@ -11,4 +11,13 @@
     font-size: 1.3rem;
     font-family: $font-4;
   }
+
+  &__box {
+    &--btn {
+    }
+
+    &--p {
+      font-family: $font-4;
+    }
+  }
 }

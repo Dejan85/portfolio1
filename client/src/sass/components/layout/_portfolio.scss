@@ -1,4 +1,6 @@
 .portfolio {
+  width: 100%;
+  height: 110rem;
   @include line;
 
   &__content {
@@ -27,17 +29,16 @@
     flex-wrap: wrap;
     align-content: flex-start;
     width: 100%;
-    height: 110rem;
+    // height: 100rem;
     margin-top: 8rem;
+    background: red;
   }
 
   &__box {
     position: relative;
     flex: 1 1 25%;
-    height: 25%;
-    background-size: cover;
-    background-position: center center;
-    background-repeat: no-repeat;
+    // height: 25%;
+    height: 25rem;
     overflow: hidden;
     z-index: 30;
     transition: all 1s;
@@ -48,29 +49,56 @@
       width: 100%;
       height: 100%;
       object-fit: cover;
-      transition: all 0.5s;
+      transition: all 0.8s;
       z-index: 50;
     }
 
     &--mask {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
       position: absolute;
       width: 100%;
       height: 100%;
       z-index: 100;
       color: white;
-      transition: all 0.5s;
+      transition: all 0.8s;
       opacity: 0;
     }
 
     &:hover {
       .opacity {
         opacity: 1;
-        background: rgba($color-dark, 0.6);
+        background: rgba($color-dark, 0.9);
       }
 
       img {
         transform: scale(1.2, 1.2);
       }
+    }
+
+    &--btn {
+      display: flex;
+      background: $color-primary;
+      width: 10rem;
+      padding: 1rem;
+      margin-bottom: 1.3rem;
+      transition: all 0.5s;
+      border-radius: 5px;
+
+      &:hover {
+        background: darken($color-primary, 20%);
+      }
+    }
+
+    &--icon {
+      display: inline-block;
+      // padding-right: 4px;
+    }
+
+    &--p {
+      padding-left: 7px;
     }
   }
 }
