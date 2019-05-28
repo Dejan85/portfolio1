@@ -1,21 +1,20 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
 
 const Social = () => {
   return (
     <div className='social'>
       <ul className="social__list">
         <li className="social__item">
-          <Link className="social__link">Github</Link>
+          <a className="social__link" href="https://github.com/xypnotica">Github</a>
         </li>
         <li className="social__item">
-          <Link className="social__link">Linkedin</Link>
+          <a className="social__link" href="https://www.linkedin.com/feed/">Linkedin</a>
         </li>
         <li className="social__item">
-          <Link className="social__link">Gmail</Link>
+          <a className="social__link" href="https://gmail.com">Gmail</a>
         </li>
         <li className="social__item">
-          <Link className="social__link">Facebook</Link>
+          <a className="social__link" href="https://www.facebook.com/profile.php?id=100030817601689">Facebook</a>
         </li>
       </ul>
     </div>
