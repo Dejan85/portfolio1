@@ -12,10 +12,10 @@ const Social = () => {
           <Link className="social__link">Linkedin</Link>
         </li>
         <li className="social__item">
-          <Link className="social__link">xypnotica@gmail.com</Link>
+          <Link className="social__link">Gmail</Link>
         </li>
         <li className="social__item">
-          <Link className="social__link">facebook</Link>
+          <Link className="social__link">Facebook</Link>
         </li>
       </ul>
     </div>

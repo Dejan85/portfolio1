@@ -6,10 +6,26 @@
   height: 22rem;
   background: $color-primary;
 
-  -webkit-clip-path: polygon(39% 0, 54% 2%, 100% 25%, 100% 88%, 81% 100%, 65% 100%, 0 80%, 0 25%);
-clip-path: polygon(39% 0, 54% 2%, 100% 25%, 100% 88%, 81% 100%, 65% 100%, 0 80%, 0 25%);
+  -webkit-clip-path: polygon(29% 0, 48% 0, 100% 28%, 100% 86%, 73% 100%, 50% 100%, 0 81%, 0% 30%);
+  clip-path: polygon(29% 0, 48% 0, 100% 28%, 100% 86%, 73% 100%, 50% 100%, 0 81%, 0% 30%);
 
-  &__links {
-    
-  }
+ 
+&__list {
+  display: flex;
+  justify-content: center;
+  width: 80rem;
+}
+
+&__item {
+  display: flex;
+  list-style-type: none;
+}
+
+
+&__link {
+  display: block;
+  padding: 2rem 3.5rem;
+}
+
+
 }
