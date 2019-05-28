@@ -1,0 +1,38 @@
+.blog{
+    &__h2{
+        @include h2;
+    }
+
+    &__p{
+        @include global-p;
+    }
+
+    &__description {
+        &--span{
+            color: $color-primary;
+            font-size: 1.2rem;
+            font-family: $font-4;
+            font-weight: 700;
+        }
+
+        &--h6{
+            color: $color-dark;
+            font-size: 1.7rem;
+            font-family: $font-4;
+        }
+
+        &--p{
+            color: $color-grey;
+            font-size: 1.2rem;
+            font-family: $font-4;
+        }
+
+        &--link{
+            color: $color-dark;
+            font-size: 1.2rem;
+            text-decoration: none;
+            font-family: $font-4;
+            font-weight: 600;
+        }
+    }
+}

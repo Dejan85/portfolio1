@@ -19,5 +19,6 @@
     "dotenv": "^8.0.0",
     "express": "^4.17.0",
     "morgan": "^1.9.1"
-  }
+  },
+  "devDependencies": {}
 }

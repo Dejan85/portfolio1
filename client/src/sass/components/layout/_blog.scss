@@ -1,0 +1,64 @@
+.blog{
+    @include line;
+
+    &__content {
+        display: flex;
+        margin-top: 8rem;
+        margin-bottom: 100px;
+        padding: 0 7rem;
+        // outline: 1px solid red;
+    }
+
+    &__image{
+        position: relative;
+        img{
+            width: 40rem;
+            height: auto;
+        }
+
+        &--mask{
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            background: $color-dark;
+            background: $color-primary;
+            opacity: 0.3;
+        }
+    }
+
+    
+
+    &__description {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        margin-left: 3rem;
+        padding-right: 7rem;
+        
+        &--span{
+            display: block;
+        }
+
+        &--h6{
+        }
+
+        &--p{
+
+        }
+
+        &--link{
+            text-align: center;
+            display: block;
+            padding: 1rem;
+            background: $color-primary;
+            width: 10rem;
+            transition: all 0.5s;
+            border-radius: 5px;
+
+            &:hover {
+                background: darken($color-primary, 20%);
+                color:lighten($color-dark, 90%);
+            }
+        }
+    }
+}
