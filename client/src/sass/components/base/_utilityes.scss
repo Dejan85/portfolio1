@@ -9,3 +9,8 @@
 .color--dark {
   color: $color-dark !important;
 }
+
+.active {
+  background: $color-primary;
+  color: white;
+}

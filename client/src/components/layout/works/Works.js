@@ -2,9 +2,9 @@ import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
 
 //Images
-import pigGame from '../../../sass/images/pigGame.png';
-import colorGame from '../../../sass/images/colorGame.png';
-import toDoApp from '../../../sass/images/toDoApp.png';
+// import pigGame from '../../../sass/images/pigGame.png';
+// import colorGame from '../../../sass/images/colorGame.png';
+// import toDoApp from '../../../sass/images/toDoApp.png';
 
 import pigGame_grey from '../../../sass/images/pigGame_grey.jpg';
 import colorGame_grey from '../../../sass/images/colorGame_grey.jpg';

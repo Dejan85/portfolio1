@@ -1,0 +1,14 @@
+.portfolio {
+  &__h2 {
+    @include h2;
+  }
+
+  &__p {
+    @include global-p;
+  }
+
+  &__content {
+    font-size: 1.3rem;
+    font-family: $font-4;
+  }
+}

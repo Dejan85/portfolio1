@@ -19,7 +19,7 @@ class Skills extends Component {
     return (
       <div className='skills'>
         <div className='skills__mask' />
-        <h2 className='skills__h2'>Skills</h2>
+        <h2 className='skills__h2'>MY CAPABILITIES</h2>
         <Line />
         <div className='container'>
           <p className='skills__p'>

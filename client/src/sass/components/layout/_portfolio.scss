@@ -1,0 +1,76 @@
+.portfolio {
+  @include line;
+
+  &__content {
+    margin-top: 8rem;
+  }
+
+  &__nav {
+    display: flex;
+    justify-content: center;
+
+    &--item {
+      list-style-type: none;
+      padding: 1rem 2.3rem;
+      transition: all 0.5s;
+      cursor: pointer;
+
+      &:hover {
+        background: $color-primary;
+        color: white;
+      }
+    }
+  }
+
+  &__projects {
+    display: flex;
+    flex-wrap: wrap;
+    align-content: flex-start;
+    width: 100%;
+    height: 110rem;
+    margin-top: 8rem;
+  }
+
+  &__box {
+    position: relative;
+    flex: 1 1 25%;
+    height: 25%;
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    overflow: hidden;
+    z-index: 30;
+    transition: all 1s;
+    cursor: pointer;
+
+    img {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      transition: all 0.5s;
+      z-index: 50;
+    }
+
+    &--mask {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      z-index: 100;
+      color: white;
+      transition: all 0.5s;
+      opacity: 0;
+    }
+
+    &:hover {
+      .opacity {
+        opacity: 1;
+        background: rgba($color-dark, 0.6);
+      }
+
+      img {
+        transform: scale(1.2, 1.2);
+      }
+    }
+  }
+}
