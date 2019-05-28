@@ -8,6 +8,8 @@ import Services from './components/layout/services/Services';
 import Works from './components/layout/works/Works';
 import Skills from './components/layout/skills/Skills';
 import Portfolio from './components/layout/portfolio/Portfolio';
+import Blog from './components/layout/blog/Blog';
+import Social from './components/layout/social/Social';
 
 const Router = () => {
   return (
@@ -18,6 +20,8 @@ const Router = () => {
       <Route exact to='/' component={Works} />
       <Route exact to='/' component={Skills} />
       <Route exact to='/' component={Portfolio} />
+      <Route exact to='/' component={Social} />
+      <Route exact to='/' component={Blog} />
     </>
   );
 };

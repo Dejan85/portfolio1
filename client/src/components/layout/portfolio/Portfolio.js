@@ -11,7 +11,7 @@ import pigGame_grey from '../../../sass/images/pigGame_grey.jpg';
 import colorGame_grey from '../../../sass/images/colorGame_grey.jpg';
 import toDoApp_grey from '../../../sass/images/toDoApp_grey.jpg';
 
-import preview from '../../../sass/images/preview.svg';
+// import preview from '../../../sass/images/preview.svg';
 //components
 import Line from '../utilities/Line';
 
@@ -108,7 +108,7 @@ class Portfolio extends Component {
                 </div>
               </div>
 
-              <img src={toDoApp} alt='slika' />
+              <img src={toDoApp_grey} alt='slika' />
             </div>
 
             <div className='portfolio__box box-4'>
