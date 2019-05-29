@@ -2,6 +2,7 @@
     background: $color-dark;
     height: 60rem;
     margin-top: -12rem;
+    user-select: none;
 
     &__content{
         display: flex;
@@ -18,11 +19,7 @@
     }
 
     &__p {
-        padding: 0 5rem 0 0;
-    }
-
-    &__list{
-        // outline: 1px solid red;
+        padding: 0 9rem 0 0;
     }
 
     &__item {
@@ -30,6 +27,7 @@
         list-style-type: none;
         padding: 0 0 5px 0;
         cursor: pointer;
+        transition: all 0.5s;
 
         i {
             display: block;
@@ -40,4 +38,12 @@
             color: lighten($color-grey, 90%);
         }
     }
+
+    &__copy-right {
+        display: block;
+        padding-top: 7rem;
+        width: 100%;
+        text-align: center;
+    }
+
 }

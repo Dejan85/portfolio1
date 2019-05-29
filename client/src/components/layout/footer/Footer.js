@@ -99,6 +99,9 @@ const Footer = () => {
           </ul>
         </div>
       </div>
+      <span className="footer__copy-right">
+        Devxad &copy; 2019 by Dejan Markovic.
+      </span>
     </div>
   );
 };
