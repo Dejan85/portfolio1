@@ -11,6 +11,7 @@ import Portfolio from "./components/layout/portfolio/Portfolio";
 import Blog from "./components/layout/blog/Blog";
 import Social from "./components/layout/social/Social";
 import Contact from "./components/layout/contact/Contact";
+import Footer from "./components/layout/footer/Footer";
 
 const Router = () => {
   return (
@@ -24,6 +25,7 @@ const Router = () => {
       <Route exact to="/" component={Social} />
       <Route exact to="/" component={Blog} />
       <Route exact to="/" component={Contact} />
+      <Route exact to="/" component={Footer} />
     </>
   );
 };

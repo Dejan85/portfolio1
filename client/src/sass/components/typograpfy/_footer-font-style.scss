@@ -1,0 +1,22 @@
+.footer {
+    color: white;
+  
+    &__h6 {
+        font-family: $font-4;
+        font-size: 1.7rem;
+        text-align: left;
+    }
+
+    &__p {
+        font-size: 1.3rem;
+        font-family: $font-4;
+        text-align: left;
+        color: $color-grey;
+    }
+
+    &__item {
+        color: $color-grey;
+        font-size: 1.4rem;
+        font-family: $font-4;
+    }
+}

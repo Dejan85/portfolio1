@@ -9,6 +9,7 @@ class Contact extends Component {
   render() {
     return (
       <div className="contact">
+        <div className="contact__mask" />
         <h2 className="contact__h2">Contact Me</h2>
         <Line />
         <p className="contact__p">

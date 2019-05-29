@@ -1,0 +1,43 @@
+.footer {
+    background: $color-dark;
+    height: 60rem;
+    margin-top: -12rem;
+
+    &__content{
+        display: flex;
+        padding-top: 20rem;
+        // outline: 1px solid white;
+    }
+
+    &__box {
+        flex: 1 0;
+    }
+
+    &__h6{
+        padding: 4rem 0;
+    }
+
+    &__p {
+        padding: 0 5rem 0 0;
+    }
+
+    &__list{
+        // outline: 1px solid red;
+    }
+
+    &__item {
+        display: flex;
+        list-style-type: none;
+        padding: 0 0 5px 0;
+        cursor: pointer;
+
+        i {
+            display: block;
+            padding-right: 2rem;
+        }
+
+        &:hover {
+            color: lighten($color-grey, 90%);
+        }
+    }
+}
