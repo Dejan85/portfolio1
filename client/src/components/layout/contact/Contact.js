@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 
-import avatar from "../../../sass/images/avatar.PNG";
+import avatar from "../../../sass/images/avatar.jpg";
 
 // component
 import Line from "../utilities/Line";
