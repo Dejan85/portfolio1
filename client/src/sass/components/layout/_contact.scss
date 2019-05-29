@@ -1,0 +1,66 @@
+.contact{
+    &__h2{
+        @include h2;
+    }
+
+    @include line;
+
+    &__p{
+        @include global-p;
+    }
+
+    &__content{
+    display: flex;
+    margin-top: 8rem;
+    // outline: 1px solid red;
+    }
+
+    &__form {
+        display: flex;
+        justify-content: center;
+        background: $color-grey-light;
+        width: 100%;
+        padding-top: 4rem;
+    }
+    
+
+    &__input-holder{
+        display: flex;
+        margin-bottom: 3rem;
+
+        input {
+            width: 39rem;
+            padding: 1.3rem 1rem;
+            border-radius: 7px;
+            border: 1px solid $color-grey;
+
+            &:focus{
+                outline: none;
+            }
+
+        }
+        
+        textarea {
+            width: 39rem;
+            border-radius: 7px;
+            padding:  1rem 1rem;
+            
+            &:focus{
+                outline: none;
+            }
+        }
+
+        button {
+            border: none;
+            background: $color-primary;
+            padding: 1rem;
+            border-radius: 10px;
+            transition: all .5s;
+
+            &:hover {
+                background: darken($color-primary, 20%);
+                color: lighten($color-dark, 90%);
+            }
+        }
+    }
+}

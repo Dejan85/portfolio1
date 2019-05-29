@@ -1,0 +1,11 @@
+.contact{
+
+    &__input-holder{
+        button{
+            color: $color-dark;
+            font-size: 1.2rem;
+            font-family: $font-4;
+            font-weight: 600;
+        }
+    }
+}
