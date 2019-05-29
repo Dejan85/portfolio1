@@ -29,10 +29,10 @@
     text-align: center;
 
     &--link {
-      color: white;
+      color: $color-dark;
       font-family: $font-4;
       text-decoration: none;
-      font-size: 2rem;
+      font-size: 1.5rem;
     }
   }
 }
