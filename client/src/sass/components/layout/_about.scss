@@ -10,10 +10,6 @@
     position: absolute;
   }
 
-  &__p {
-    @include global-p;
-  }
-
   &__content {
     display: flex;
     flex-wrap: wrap;
