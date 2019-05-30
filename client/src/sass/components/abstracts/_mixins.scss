@@ -57,9 +57,16 @@ $breakpoint argument choices:
 */
 
 @mixin respond($breakpoint) {
+  @if $breakpoint == 320 {
+    @media (max-width: 20em) {
+      // 320px  (320 / 16px)  16px je default vrednost em-a
+      @content;
+    }
+  }
+
   @if $breakpoint == 420 {
     @media (max-width: 26.25em) {
-      // 320px  (420 / 16px)  16px je default vrednost em-a
+      // 420px  (420 / 16px)  16px je default vrednost em-a
       @content;
     }
   }
@@ -116,7 +123,7 @@ $breakpoint argument choices:
     background: white;
     position: absolute;
     display: block;
-    content: '';
+    content: "";
   }
   #nav-toggle span:before {
     top: -10px;
