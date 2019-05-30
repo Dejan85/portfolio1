@@ -2,11 +2,7 @@
   &__p {
     @include global-p;
 
-    @include respond(380) {
-      font-size: 1.9rem;
-    }
-
-    @include respond(320) {
+    @include respond(1200) {
       font-size: 1.9rem;
     }
   }
