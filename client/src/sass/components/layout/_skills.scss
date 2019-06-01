@@ -96,9 +96,9 @@
     color: white;
     // outline: 1px solid yellow;
 
-    @include respond(1200) {
-      width: 33.33%;
-    }
+    // @include respond(1200) {
+    //   width: 33.33%;
+    // }
 
     @include respond(768) {
       width: 100%;
@@ -115,18 +115,18 @@
     width: 24rem;
     height: 24rem;
 
-    @include respond(1200) {
-      border: 10rem solid rgba(33, 33, 33, 0.7);
-      width: 38rem;
-      height: 38rem;
-    }
+    // @include respond(1200) {
+    //   border: 10rem solid rgba(33, 33, 33, 0.7);
+    //   width: 38rem;
+    //   height: 38rem;
+    // }
 
-    @include respond(980) {
-      border: 10rem solid rgba(33, 33, 33, 0.7);
-      width: 34rem;
-      height: 34rem;
-      // outline: 1px solid red;
-    }
+    // @include respond(980) {
+    //   border: 10rem solid rgba(33, 33, 33, 0.7);
+    //   width: 34rem;
+    //   height: 34rem;
+    //   // outline: 1px solid red;
+    // }
 
     @include respond(768) {
       border: 19rem solid rgba(33, 33, 33, 0.7);
@@ -141,15 +141,15 @@
     width: 25.5rem;
     height: 25.5rem;
 
-    @include respond(1200) {
-      width: 40.5rem;
-      height: 40.5rem;
-    }
+    // @include respond(1200) {
+    //   width: 40.5rem;
+    //   height: 40.5rem;
+    // }
 
-    @include respond(980) {
-      width: 36.5rem;
-      height: 36.5rem;
-    }
+    // @include respond(980) {
+    //   width: 36.5rem;
+    //   height: 36.5rem;
+    // }
 
     @include respond(768) {
       width: 68.5rem;
@@ -172,22 +172,22 @@
     &__p {
       width: 17rem;
 
-      @include respond(1200) {
-        width: 25rem;
-      }
+      // @include respond(1200) {
+      //   width: 25rem;
+      // }
     }
 
-    @include respond(1200) {
-      width: 38rem;
-      height: 38rem;
-      margin-top: 28rem;
-    }
+    // @include respond(1200) {
+    //   width: 38rem;
+    //   height: 38rem;
+    //   margin-top: 28rem;
+    // }
 
-    @include respond(980) {
-      width: 34rem;
-      height: 34rem;
-      margin-top: 24rem;
-    }
+    // @include respond(980) {
+    //   width: 34rem;
+    //   height: 34rem;
+    //   margin-top: 24rem;
+    // }
 
     @include respond(768) {
       width: 64rem;
@@ -199,13 +199,13 @@
   &__h5 {
     margin-top: 4rem;
 
-    @include respond(1200) {
-      margin-top: 7rem;
-    }
+    // @include respond(1200) {
+    //   margin-top: 7rem;
+    // }
 
-    @include respond(980) {
-      margin-top: 8rem;
-    }
+    // @include respond(980) {
+    //   margin-top: 8rem;
+    // }
   }
 
   &__line {
@@ -213,9 +213,9 @@
     width: 2rem;
     margin: 1.4rem 0;
 
-    @include respond(1200) {
-      width: 2.5rem;
-      margin: 1.7rem 0;
-    }
+    // @include respond(1200) {
+    //   width: 2.5rem;
+    //   margin: 1.7rem 0;
+    // }
   }
 }
