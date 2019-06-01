@@ -133,6 +133,13 @@
       width: 64rem;
       height: 64rem;
     }
+
+    @include respond(380) {
+      max-width: 38.5rem;
+      width: 100%;
+      max-height: 38.5rem;
+      height: 100%;
+    }
   }
 
   &__canvas {
@@ -152,8 +159,17 @@
     // }
 
     @include respond(768) {
-      width: 68.5rem;
-      height: 68.5rem;
+      max-width: 68.5rem;
+      width: 100%;
+      max-height: 68.5rem;
+      height: 100%;
+    }
+
+    @include respond(380) {
+      max-width: 38.5rem;
+      width: 100%;
+      max-height: 38.5rem;
+      height: 100%;
     }
   }
 
@@ -190,9 +206,18 @@
     // }
 
     @include respond(768) {
-      width: 64rem;
-      height: 64rem;
-      margin-top: 45rem;
+      max-width: 64rem;
+      width: 100%;
+      max-height: 64rem;
+      height: 100%;
+      margin-top: 30rem;
+    }
+
+    @include respond(380) {
+      max-width: 38.5rem;
+      width: 100%;
+      max-height: 38.5rem;
+      height: 100%;
     }
   }
 
@@ -212,10 +237,5 @@
     border-top: 1.8px solid $color-primary;
     width: 2rem;
     margin: 1.4rem 0;
-
-    // @include respond(1200) {
-    //   width: 2.5rem;
-    //   margin: 1.7rem 0;
-    // }
   }
 }
