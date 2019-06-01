@@ -1,5 +1,6 @@
 .about {
   user-select: none;
+  position: relative;
   &__h2 {
     @include h2;
   }
@@ -7,7 +8,7 @@
   @include line;
 
   &__icon {
-    position: absolute;
+    // position: absolute;
   }
 
   &__content {
@@ -20,6 +21,7 @@
     display: flex;
     width: 33.33%;
     padding: 2rem;
+    outline: 1px solid red;
 
     @include respond(768) {
       width: 49%;
@@ -37,10 +39,11 @@
     }
 
     &--container {
-      padding-left: 7.5rem;
+      // padding-left: 7.5rem;
+      padding-left: 2rem;
 
       @include respond(1200) {
-        padding-left: 12rem;
+        padding-left: 2rem;
       }
     }
 
