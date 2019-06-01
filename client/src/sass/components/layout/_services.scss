@@ -30,11 +30,11 @@
   }
 
   @include respond(992) {
-    height: 80rem;
+    height: 90rem;
   }
 
   @include respond(768) {
-    height: 80rem;
+    height: 100rem;
   }
 
   @include respond(480) {
@@ -68,6 +68,10 @@
     margin-top: 8rem;
     padding-right: 11rem;
 
+    @include respond(1200) {
+      padding-right: 1px;
+    }
+
     @include respond(768) {
       padding-right: 1px;
     }
@@ -87,9 +91,12 @@
       width: 42rem;
     }
 
-    @include respond(768) {
-      padding-right: 4rem;
-    }
+    // @include respond(768) {
+    //   &__container {
+    //     padding-right: 4rem;
+    //     width: 36.6rem;
+    //   }
+    // }
 
     @include respond(480) {
       padding-right: 2rem;
@@ -104,9 +111,9 @@
   &__p {
     margin-top: 1rem;
 
-    @include respond(480) {
-      padding-top: 2rem;
-    }
+    // @include respond(480) {
+    //   padding-top: 2rem;
+    // }
   }
 
   &__decoration-div {

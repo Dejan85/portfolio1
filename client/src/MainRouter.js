@@ -16,9 +16,9 @@ import Footer from "./components/layout/footer/Footer";
 const Router = () => {
   return (
     <>
-      {/* <Route exact to="/" component={Home} /> */}
-      <Route exact to="/" component={About} />
-      {/* <Route exact to="/" component={Services} /> */}
+      {/* <Route exact to="/" component={Home} />
+      <Route exact to="/" component={About} /> */}
+      <Route exact to="/" component={Services} />
       {/* <Route exact to="/" component={Works} /> */}
       {/* <Route exact to="/" component={Skills} /> */}
       {/* <Route exact to="/" component={Portfolio} /> */}

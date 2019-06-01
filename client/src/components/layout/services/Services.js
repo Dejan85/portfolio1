@@ -53,9 +53,7 @@ class Services extends Component {
             </div>
           </div>
         </div>
-        <div className="services__decoration-div">
-          {/* <img src={img} /> */}
-        </div>
+        <div className="services__decoration-div" />
       </div>
     );
   }

@@ -31,12 +31,12 @@ html {
 
 body {
   box-sizing: border-box;
-
 }
 
 .container {
   width: 100rem;
   margin: 0 auto;
+  outline: 1px solid red;
 
   @include respond(1200) {
     width: 95%;
