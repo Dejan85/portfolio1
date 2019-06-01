@@ -3,14 +3,14 @@
   font-family: $font-4;
 
   &__h2 {
-    font-size: 3.6rem;
+    // font-size: 3.6rem;
     text-transform: uppercase;
     color: white;
     text-align: left;
 
-    // @include respond(1200) {
-    //   font-size: 5rem;
-    // }
+    @include respond(480) {
+      font-size: 7rem;
+    }
   }
 
   &__icon {
@@ -19,9 +19,9 @@
     //   font-size: 7rem;
     // }
 
-    // @include respond(480) {
-    //   font-size: 8rem;
-    // }
+    @include respond(480) {
+      font-size: 8rem;
+    }
   }
 
   &__h3 {
@@ -32,9 +32,9 @@
     //   font-size: 3rem;
     // }
 
-    // @include respond(480) {
-    //   font-size: 3.5rem;
-    // }
+    @include respond(480) {
+      font-size: 3.5rem;
+    }
   }
 
   &__p {
@@ -51,8 +51,8 @@
     //   font-size: 1.5rem;
     // }
 
-    // @include respond(480) {
-    //   font-size: 1.7rem;
-    // }
+    @include respond(480) {
+      font-size: 1.7rem;
+    }
   }
 }

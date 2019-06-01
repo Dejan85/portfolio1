@@ -47,6 +47,11 @@
     display: flex;
     justify-content: flex-end;
     flex: 1.4;
+
+    @include respond(480) {
+      justify-content: flex-start;
+      flex: 1;
+    }
   }
 
   &__h2 {
@@ -61,6 +66,11 @@
     max-width: 50rem;
     width: 100%;
     padding-left: 2rem;
+
+    @include respond(480) {
+      max-width: 100%;
+      padding: 0 5rem;
+    }
   }
 
   &__box {
@@ -68,6 +78,10 @@
     margin-top: 5.5rem;
     max-width: 27rem;
     width: 100%;
+
+    @include respond(480) {
+      max-width: 90%;
+    }
 
     &__container {
       padding-left: 2rem;
