@@ -30,6 +30,11 @@
       }
 
       @include respond(480) {
+        font-size: 2.2rem;
+        line-height: 2.8rem;
+      }
+
+      @include respond(480) {
         font-size: 1.8rem;
         line-height: 2.8rem;
       }
