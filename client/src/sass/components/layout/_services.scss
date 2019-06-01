@@ -76,8 +76,11 @@
   }
 
   &__right-box {
-    outline: 2px solid green;
     flex: 1;
+
+    @include respond(480) {
+      display: none;
+    }
   }
 
   &__decoration-div {
