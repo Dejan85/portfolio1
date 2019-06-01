@@ -1,12 +1,12 @@
 import React, { Component } from "react";
-import { Link } from 'react-router-dom';
+import { Link } from "react-router-dom";
 
 // components
 import Line from "../utilities/Line";
 
 // image
-import pigGame_grey from '../../../sass/images/pigGame_grey.jpg';
-import colorGame_grey from '../../../sass/images/colorGame_grey.jpg';
+import pigGame_grey from "../../../sass/images/pigGame_grey.jpg";
+import colorGame_grey from "../../../sass/images/colorGame_grey.jpg";
 
 class Blog extends Component {
   render() {
@@ -28,15 +28,15 @@ class Blog extends Component {
             <span className="blog__description--span">28TH AUGUST 2019</span>
             <h6 className="blog__description--h6">
               TEN AMAZING AND STRANGE PICTURES BY PROFESSIONALS
-          </h6>
+            </h6>
             <p className="blog__description--p">
               Donec pede justo, fringilla, aliquet nec, vulputatee egerdiet
               erdiett arcu. In justo, rhoncus ut, imperdiet a, venenatis
-              vitaerdiet erde justo. llam dictum felis eu pede mollis pretium diet
-              a, venenatis vita sto. Nullam dictum felis eu pede mollis
+              vitaerdiet erde justo. llam dictum felis eu pede mollis pretium
+              diet a, venenatis vita sto. Nullam dictum felis eu pede mollis
               pretiumdiet a, venenatis ie ust. ullam dictum felis eu pedemol
               iumpretium ieta...
-          </p>
+            </p>
             <Link className="blog__description--link">Read More</Link>
           </div>
         </div>
@@ -50,15 +50,15 @@ class Blog extends Component {
             <span className="blog__description--span">28TH AUGUST 2019</span>
             <h6 className="blog__description--h6">
               TEN AMAZING AND STRANGE PICTURES BY PROFESSIONALS
-          </h6>
+            </h6>
             <p className="blog__description--p">
               Donec pede justo, fringilla, aliquet nec, vulputatee egerdiet
               erdiett arcu. In justo, rhoncus ut, imperdiet a, venenatis
-              vitaerdiet erde justo. llam dictum felis eu pede mollis pretium diet
-              a, venenatis vita sto. Nullam dictum felis eu pede mollis
+              vitaerdiet erde justo. llam dictum felis eu pede mollis pretium
+              diet a, venenatis vita sto. Nullam dictum felis eu pede mollis
               pretiumdiet a, venenatis ie ust. ullam dictum felis eu pedemol
               iumpretium ieta...
-          </p>
+            </p>
             <Link className="blog__description--link">Read More</Link>
           </div>
         </div>

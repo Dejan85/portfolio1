@@ -1,39 +1,57 @@
-.blog{
-    &__h2{
-        @include h2;
+.blog {
+  &__h2 {
+    @include h2;
+  }
+
+  &__p {
+    @include global-p;
+  }
+
+  &__description {
+    text-align: left;
+    &--span {
+      color: $color-primary;
+      font-size: 1.2rem;
+      font-family: $font-4;
+      font-weight: 700;
+
+      @include respond(1200) {
+        font-size: 1.4rem;
+      }
     }
 
-    &__p{
-        @include global-p;
+    &--h6 {
+      color: $color-dark;
+      font-size: 1.7rem;
+      font-family: $font-4;
+      text-align: center;
+
+      @include respond(1200) {
+        font-size: 2rem;
+      }
     }
 
-    &__description {
-        text-align: left;
-        &--span{
-            color: $color-primary;
-            font-size: 1.2rem;
-            font-family: $font-4;
-            font-weight: 700;
-        }
+    &--p {
+      color: $color-grey;
+      font-size: 1.2rem;
+      font-family: $font-4;
+      text-align: center;
 
-        &--h6{
-            color: $color-dark;
-            font-size: 1.7rem;
-            font-family: $font-4;
-        }
-
-        &--p{
-            color: $color-grey;
-            font-size: 1.2rem;
-            font-family: $font-4;
-        }
-
-        &--link{
-            color: $color-dark;
-            font-size: 1.2rem;
-            text-decoration: none;
-            font-family: $font-4;
-            font-weight: 600;
-        }
+      @include respond(1200) {
+        font-size: 1.5rem;
+      }
     }
+
+    &--link {
+      color: $color-dark;
+      font-size: 1.2rem;
+      text-decoration: none;
+      font-family: $font-4;
+      font-weight: 600;
+
+      @include respond(1200) {
+        font-size: 1.5rem;
+      }
+    }
+  }
 }
