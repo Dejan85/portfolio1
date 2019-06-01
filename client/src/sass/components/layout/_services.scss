@@ -43,90 +43,47 @@
     height: 85rem;
   }
 
-  &__content {
+  &__left-box {
     display: flex;
-    flex-direction: column;
-    align-items: flex-end;
-    // width: 86rem;
-    width: 54.5%;
-    margin-top: 2.2rem;
-    padding-right: 7rem;
+    justify-content: flex-end;
+    flex: 1.4;
+  }
 
-    @include respond(1200) {
-      align-items: flex-start;
-      padding-left: 5rem;
-    }
-
-    @include respond(480) {
-      width: 100%;
-    }
+  &__h2 {
+    @include h2;
   }
 
   @include line-2;
 
-  &__h2--container {
-    margin-top: 8rem;
-    padding-right: 11rem;
-
-    @include respond(1200) {
-      padding-right: 1px;
-    }
-
-    @include respond(768) {
-      padding-right: 1px;
-    }
-
-    @include respond(480) {
-      padding-right: 1px;
-    }
+  &__content {
+    display: flex;
+    flex-direction: column;
+    max-width: 50rem;
+    width: 100%;
+    padding-left: 2rem;
   }
 
   &__box {
     display: flex;
-    padding-top: 5.5rem;
-    padding-right: 11rem;
-    width: 36.6rem;
+    margin-top: 5.5rem;
+    max-width: 27rem;
+    width: 100%;
 
-    @include respond(1200) {
-      width: 42rem;
-    }
-
-    // @include respond(768) {
-    //   &__container {
-    //     padding-right: 4rem;
-    //     width: 36.6rem;
-    //   }
-    // }
-
-    @include respond(480) {
-      padding-right: 2rem;
+    &__container {
+      padding-left: 2rem;
+      padding-top: 1rem;
     }
   }
 
-  &__h3,
-  &__p {
-    padding-left: 2rem;
-  }
-
-  &__p {
-    margin-top: 1rem;
-
-    // @include respond(480) {
-    //   padding-top: 2rem;
-    // }
+  &__right-box {
+    outline: 2px solid green;
+    flex: 1;
   }
 
   &__decoration-div {
     height: 100%;
-    width: 33rem;
+    max-width: 33rem;
+    width: 100%;
     background: $color-dark;
-
-    @include respond(768) {
-      width: 25rem;
-    }
-
-    @include respond(480) {
-      display: none;
-    }
   }
 }

@@ -5,34 +5,36 @@
   &__h2 {
     font-size: 3.6rem;
     text-transform: uppercase;
+    color: white;
+    text-align: left;
 
-    @include respond(1200) {
-      font-size: 5rem;
-    }
+    // @include respond(1200) {
+    //   font-size: 5rem;
+    // }
   }
 
   &__icon {
     font-size: 5rem;
-    @include respond(768) {
-      font-size: 7rem;
-    }
+    // @include respond(768) {
+    //   font-size: 7rem;
+    // }
 
-    @include respond(480) {
-      font-size: 8rem;
-    }
+    // @include respond(480) {
+    //   font-size: 8rem;
+    // }
   }
 
   &__h3 {
     font-size: 2.1rem;
     text-transform: uppercase;
 
-    @include respond(768) {
-      font-size: 3rem;
-    }
+    // @include respond(768) {
+    //   font-size: 3rem;
+    // }
 
-    @include respond(480) {
-      font-size: 3.5rem;
-    }
+    // @include respond(480) {
+    //   font-size: 3.5rem;
+    // }
   }
 
   &__p {
@@ -41,16 +43,16 @@
     font-family: $font-4;
     line-height: 2rem;
 
-    @include respond(1200) {
-      font-size: 1.3rem;
-    }
+    // @include respond(1200) {
+    //   font-size: 1.3rem;
+    // }
 
-    @include respond(768) {
-      font-size: 1.5rem;
-    }
+    // @include respond(768) {
+    //   font-size: 1.5rem;
+    // }
 
-    @include respond(480) {
-      font-size: 1.7rem;
-    }
+    // @include respond(480) {
+    //   font-size: 1.7rem;
+    // }
   }
 }
