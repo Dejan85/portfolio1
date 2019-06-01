@@ -22,7 +22,7 @@ const Router = () => {
       <Route exact to="/" component={Works} /> */}
       {/* <Route exact to="/" component={Skills} /> */}
       <Route exact to="/" component={Portfolio} />
-      {/* <Route exact to="/" component={Social} /> */}
+      <Route exact to="/" component={Social} />
       {/* <Route exact to="/" component={Blog} /> */}
       {/* <Route exact to="/" component={Contact} /> */}
       {/* <Route exact to="/" component={Footer} /> */}

@@ -6,26 +6,59 @@
   height: 22rem;
   background: $color-primary;
 
-  -webkit-clip-path: polygon(29% 0, 48% 0, 100% 28%, 100% 86%, 73% 100%, 50% 100%, 0 81%, 0% 30%);
-  clip-path: polygon(29% 0, 48% 0, 100% 28%, 100% 86%, 73% 100%, 50% 100%, 0 81%, 0% 30%);
+  -webkit-clip-path: polygon(
+    29% 0,
+    48% 0,
+    100% 28%,
+    100% 86%,
+    73% 100%,
+    50% 100%,
+    0 81%,
+    0% 30%
+  );
+  clip-path: polygon(
+    29% 0,
+    48% 0,
+    100% 28%,
+    100% 86%,
+    73% 100%,
+    50% 100%,
+    0 81%,
+    0% 30%
+  );
 
- 
-&__list {
-  display: flex;
-  justify-content: center;
-  width: 80rem;
-}
+  @include respond(768) {
+    clip-path: none;
+    height: auto;
+  }
 
-&__item {
-  display: flex;
-  list-style-type: none;
-}
+  &__list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    max-width: 80rem;
+    width: 100%;
+  }
 
+  &__item {
+    display: flex;
+    flex: 1 1 20%;
+    list-style-type: none;
 
-&__link {
-  display: block;
-  padding: 2rem 3.5rem;
-}
+    @include respond(768) {
+      clip-path: none;
+      flex: 1 1 50%;
+      justify-content: center;
+    }
 
+    @include respond(480) {
+      clip-path: none;
+      flex: 1 1 98%;
+    }
+  }
 
+  &__link {
+    display: block;
+    padding: 2rem 3.5rem;
+  }
 }
