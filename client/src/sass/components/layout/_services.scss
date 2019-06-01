@@ -1,6 +1,6 @@
 .services {
   display: flex;
-  height: 70rem;
+  min-height: 75rem;
   margin-top: 9rem;
   background: $color-primary;
 
@@ -25,21 +25,21 @@
       32% 0
     );
     clip-path: polygon(100% 10%, 100% 89%, 67% 100%, 0 91%, 0 6%, 32% 0);
-
-    height: 75rem;
-  }
-
-  @include respond(992) {
-    height: 90rem;
-  }
-
-  @include respond(768) {
-    height: 100rem;
   }
 
   @include respond(480) {
     -webkit-clip-path: polygon(100% 3%, 100% 98%, 67% 100%, 0 96%, 0 1%, 12% 0);
     clip-path: polygon(100% 3%, 100% 98%, 67% 100%, 0 96%, 0 1%, 12% 0);
+    min-height: 85rem;
+    height: 100%;
+  }
+
+  @include respond(480) {
+    min-height: 75rem;
+    width: 100%;
+  }
+
+  @include respond(380) {
     height: 85rem;
   }
 
@@ -69,7 +69,7 @@
 
     @include respond(480) {
       max-width: 100%;
-      padding: 0 5rem;
+      padding: 0 4rem;
     }
   }
 
