@@ -15,6 +15,12 @@
     padding: 0 2rem;
     padding-top: 9rem;
 
+    @include respond(980) {
+      justify-content: center;
+      flex-wrap: wrap;
+      // outline: 2px solid green;
+    }
+
     @include respond(480) {
       flex-wrap: wrap;
       justify-content: flex-start;
@@ -26,6 +32,15 @@
     width: 30%;
     height: 43rem;
     // height: 516px;
+
+    @include respond(980) {
+      width: 60%;
+      height: 70rem;
+
+      &:not(:first-child) {
+        margin-top: 10rem;
+      }
+    }
 
     @include respond(480) {
       width: 100%;

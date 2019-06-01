@@ -93,7 +93,7 @@ $breakpoint argument choices:
   }
 
   @if $breakpoint == 980 {
-    @media (max-width: 62em) {
+    @media (max-width: 61.25em) {
       // 980px
       @content;
     }
