@@ -1,49 +1,52 @@
 .footer {
-    background: $color-dark;
-    height: 60rem;
-    margin-top: -12rem;
-    user-select: none;
+  background: $color-dark;
+  height: 60rem;
+  height: auto;
+  margin-top: -12rem;
+  user-select: none;
 
-    &__content{
-        display: flex;
-        padding-top: 20rem;
-        // outline: 1px solid white;
+  &__content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding-top: 20rem;
+  }
+
+  &__box {
+    flex: 1 0;
+    padding-left: 5rem;
+  }
+
+  &__h6 {
+    padding: 4rem 0;
+  }
+
+  &__p {
+    padding: 0 9rem 0 0;
+  }
+
+  &__item {
+    display: flex;
+    list-style-type: none;
+    padding: 0 0 5px 0;
+    cursor: pointer;
+    transition: all 0.5s;
+
+    i {
+      display: block;
+      padding-right: 2rem;
     }
 
-    &__box {
-        flex: 1 0;
+    &:hover {
+      color: lighten($color-grey, 90%);
     }
+  }
 
-    &__h6{
-        padding: 4rem 0;
-    }
-
-    &__p {
-        padding: 0 9rem 0 0;
-    }
-
-    &__item {
-        display: flex;
-        list-style-type: none;
-        padding: 0 0 5px 0;
-        cursor: pointer;
-        transition: all 0.5s;
-
-        i {
-            display: block;
-            padding-right: 2rem;
-        }
-
-        &:hover {
-            color: lighten($color-grey, 90%);
-        }
-    }
-
-    &__copy-right {
-        display: block;
-        padding-top: 7rem;
-        width: 100%;
-        text-align: center;
-    }
-
+  &__copy-right {
+    display: block;
+    padding-top: 7rem;
+    padding-bottom: 4rem;
+    width: 100%;
+    text-align: center;
+  }
 }
