@@ -4,6 +4,10 @@
 
 .border--none {
   border: none !important;
+
+  @include respond(980) {
+    padding-top: 1rem !important;
+  }
 }
 
 .color--dark {
