@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import { Element } from "react-scroll";
+
 // images
 import pigGame from "../../../sass/images/pigGame.jpg";
 import colorGame from "../../../sass/images/colorGame.jpg";

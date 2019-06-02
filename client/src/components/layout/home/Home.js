@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect, useRef } from "react";
 
 // components
 import Logo from "./Logo";
@@ -8,6 +8,7 @@ import DropMenu from "./DropMenu";
 
 function Home() {
   const [active, setActive] = useState(false);
+  const headerRef = useRef();
 
   const handleDropMenu = () => {
     setActive(!active);
@@ -17,11 +18,19 @@ function Home() {
     setActive(false);
   };
 
+  useEffect(() => {
+    console.log(headerRef.current.offsetTop);
+    console.log(window.pageYOffset);
+    if (window.pageXOffset === headerRef.current.offsetTop) {
+      console.log("radi");
+    }
+  });
+
   return (
     <div className="home" onWheel={onWheelHandler}>
       {active ? <DropMenu /> : null}
       <div className="home__left">
-        <header className="home__header">
+        <header className="home__header" ref={headerRef}>
           <Logo />
           <Nav />
         </header>
