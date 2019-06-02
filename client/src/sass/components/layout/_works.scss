@@ -96,7 +96,7 @@
 
   &__discover {
     margin-top: 10rem;
-    padding-bottom: 10rem;
+    padding-bottom: 10em;
 
     @include respond(480) {
       margin-top: 7rem;
@@ -106,7 +106,6 @@
       display: inline-block;
       padding: 1.2rem;
       background: $color-primary;
-      border-radius: 14px;
       transition: all 0.5s;
 
       &:hover {
