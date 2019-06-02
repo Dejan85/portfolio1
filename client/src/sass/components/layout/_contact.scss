@@ -18,6 +18,11 @@
   -webkit-clip-path: polygon(100% 0, 100% 86%, 61% 100%, 0 83%, 0 0);
   clip-path: polygon(100% 0, 100% 93%, 61% 100%, 0 93%, 0 0);
 
+  @include respond(768) {
+    -webkit-clip-path: polygon(100% 0, 100% 98%, 61% 100%, 0 96%, 0 0);
+    clip-path: polygon(100% 0, 100% 98%, 61% 100%, 0 96%, 0 0);
+  }
+
   &__h2 {
     @include h2;
     color: white;

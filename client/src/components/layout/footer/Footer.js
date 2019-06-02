@@ -52,6 +52,29 @@ const Footer = () => {
             </li>
           </ul>
         </div>
+
+        <div className="footer__box ">
+          <h6 className="footer__h6">Have a Question?</h6>
+          <ul className="footer__list">
+            <li className="footer__item">
+              <i className="fab fa-google" />
+              xypnotica@gmail.com
+            </li>
+            <li className="footer__item">
+              <i className="fas fa-phone" />
+              069/1907978
+            </li>
+            <li className="footer__item">
+              <i className="fab fa-viber" />
+              069/1907978
+            </li>
+            <li className="footer__item">
+              <i className="fas fa-city" />
+              Obrenovac
+            </li>
+          </ul>
+        </div>
+
         <div className="footer__box">
           <h6 className="footer__h6">Services</h6>
           <ul className="footer__list">
@@ -74,27 +97,6 @@ const Footer = () => {
             <li className="footer__item">
               <i className="fas fa-long-arrow-alt-right" />
               Fullstack
-            </li>
-          </ul>
-        </div>
-        <div className="footer__box">
-          <h6 className="footer__h6">Have a Question?</h6>
-          <ul className="footer__list">
-            <li className="footer__item">
-              <i className="fab fa-google" />
-              xypnotica@gmail.com
-            </li>
-            <li className="footer__item">
-              <i className="fas fa-phone" />
-              069/1907978
-            </li>
-            <li className="footer__item">
-              <i className="fab fa-viber" />
-              069/1907978
-            </li>
-            <li className="footer__item">
-              <i className="fas fa-city" />
-              Obrenovac
             </li>
           </ul>
         </div>
