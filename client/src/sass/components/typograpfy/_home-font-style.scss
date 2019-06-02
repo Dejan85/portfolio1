@@ -44,3 +44,23 @@
     }
   }
 }
+
+.drop__menu {
+  &__item {
+    font-size: 5rem;
+
+    @include respond(768) {
+      font-size: 3rem;
+    }
+
+    @include respond(480) {
+      font-size: 2rem;
+    }
+  }
+
+  &__link {
+    text-decoration: none;
+    color: white;
+    font-family: $font-4;
+  }
+}
