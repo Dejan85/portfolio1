@@ -1,9 +1,9 @@
 import React, { Component } from "react";
 
-import avatar from "../../../sass/images/avatar.jpg";
+// import avatar from "../../../sass/images/avatar.jpg";
 import avatar_2 from "../../../sass/images/avatar_2.jpg";
-import avatar_3 from "../../../sass/images/avatar_3.jpg";
-import avatar_4 from "../../../sass/images/avatar_4.jpg";
+// import avatar_3 from "../../../sass/images/avatar_3.jpg";
+// import avatar_4 from "../../../sass/images/avatar_4.jpg";
 
 // component
 import Line from "../utilities/Line";
@@ -29,9 +29,7 @@ class Contact extends Component {
               <input className="contact__input" placeholder="Your Name" />
               <input className="contact__input" placeholder="Your Email" />
               <input className="contact__input" placeholder="Subject" />
-              <textarea className="contact__input" rows="8">
-                Message
-              </textarea>
+              <textarea className="contact__input" rows="8" defaultValue="" />
               <button className="contact__btn">Send Message</button>
             </form>
           </div>

@@ -6,7 +6,7 @@ import Home from "./components/layout/home/Home";
 import About from "./components/layout/about/About";
 import Services from "./components/layout/services/Services";
 import Works from "./components/layout/works/Works";
-import Skills from "./components/layout/skills/Skills";
+// import Skills from "./components/layout/skills/Skills";
 import Portfolio from "./components/layout/portfolio/Portfolio";
 import Blog from "./components/layout/blog/Blog";
 import Social from "./components/layout/social/Social";

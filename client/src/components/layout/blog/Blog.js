@@ -37,7 +37,9 @@ class Blog extends Component {
               pretiumdiet a, venenatis ie ust. ullam dictum felis eu pedemol
               iumpretium ieta...
             </p>
-            <Link className="blog__description--link">Read More</Link>
+            <Link className="blog__description--link" to="/">
+              Read More
+            </Link>
           </div>
         </div>
 
@@ -59,7 +61,9 @@ class Blog extends Component {
               pretiumdiet a, venenatis ie ust. ullam dictum felis eu pedemol
               iumpretium ieta...
             </p>
-            <Link className="blog__description--link">Read More</Link>
+            <Link className="blog__description--link" to="/">
+              Read More
+            </Link>
           </div>
         </div>
       </div>
