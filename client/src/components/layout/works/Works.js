@@ -14,10 +14,7 @@ import toDoApp_grey from "../../../sass/images/toDoApp_grey.jpg";
 import Line from "../utilities/Line";
 
 class Works extends Component {
-
-
   render() {
-
     return (
       <div className="works container">
         <h2 className="works__h2">MOST POPULAR</h2>
@@ -49,7 +46,23 @@ class Works extends Component {
               </p>
             </div>
 
-            <div className="works__card__back">BACK</div>
+            <div className="works__card__back">
+              <div
+                className="portfolio__box"
+                style={{ width: "100%", height: "100%" }}>
+                <div className="portfolio__box--mask opacity">
+                  <div className="portfolio__box--btn">
+                    <i className="far fa-eye portfolio__box--icon" />
+                    <p className="portfolio__box--p">Preview</p>
+                  </div>
+
+                  <div className="portfolio__box--btn">
+                    <i className="fas fa-info portfolio__box--icon" />
+                    <p className="portfolio__box--p">Description</p>
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
 
           <div className="works__card">
