@@ -11,8 +11,6 @@ const DropMenu = () => {
     });
   }, []);
 
-  console.log(transition);
-
   return (
     <div className="drop__menu" style={transition}>
       <ul className="drop__menu__list">

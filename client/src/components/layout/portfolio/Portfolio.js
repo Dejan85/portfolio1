@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-
+import { Element } from "react-scroll";
 // images
 import pigGame from "../../../sass/images/pigGame.jpg";
 import colorGame from "../../../sass/images/colorGame.jpg";
@@ -33,6 +33,7 @@ class Portfolio extends Component {
   render() {
     return (
       <div className="portfolio">
+        {/* <Element name="portfolio" /> */}
         <h2 className="portfolio__h2">All my works</h2>
         <Line />
         <p className="portfolio__p">

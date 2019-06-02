@@ -13,8 +13,12 @@ function Home() {
     setActive(!active);
   };
 
+  const onWheelHandler = () => {
+    setActive(false);
+  };
+
   return (
-    <div className="home">
+    <div className="home" onWheel={onWheelHandler}>
       {active ? <DropMenu /> : null}
       <div className="home__left">
         <header className="home__header">
