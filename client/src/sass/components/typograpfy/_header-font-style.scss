@@ -5,6 +5,10 @@
     text-transform: uppercase;
     font-weight: 800;
     color: $color-primary;
+
+    @include respond(980) {
+      color: $color-dark;
+    }
   }
 
   &__item {
