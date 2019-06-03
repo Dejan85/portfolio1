@@ -4,7 +4,7 @@ import React, { useState, useEffect, useRef } from "react";
 import Logo from "./Logo";
 import Nav from "./Nav";
 import NavRightSide from "./NavRightSide";
-import DropMenu from "../home/DropMenu";
+import DropMenu from "./DropMenu";
 
 const Header = () => {
   const [active, setActive] = useState(false);
