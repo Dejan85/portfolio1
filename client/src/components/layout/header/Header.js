@@ -14,8 +14,6 @@ const Header = () => {
   const [active, setActive] = useState(false);
   const style = useNavHook(headerRef);
 
-  // const activeHook = useActiveHook(active);
-
   useEffect(() => {
     window.addEventListener("scroll", () => {
       setActive(false);
