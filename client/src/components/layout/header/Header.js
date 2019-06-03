@@ -21,7 +21,7 @@ const Header = () => {
           ? {
               header: {
                 position: "fixed",
-                top: "0rem"
+                paddingTop: "0rem"
               },
               leftSide: {
                 background: "#29b6f6"
@@ -30,7 +30,8 @@ const Header = () => {
                 background: "#212121"
               },
               logo: {
-                color: "#212121"
+                color: "#212121",
+                fontSize: "1.6rem"
               }
             }
           : {};

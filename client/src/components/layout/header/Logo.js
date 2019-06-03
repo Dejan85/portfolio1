@@ -1,4 +1,5 @@
 import React from "react";
+import PropTypes from "prop-types";
 
 const Logo = ({ style }) => {
   return (
@@ -6,6 +7,10 @@ const Logo = ({ style }) => {
       Devxad
     </div>
   );
+};
+
+Logo.propTypes = {
+  style: PropTypes.object
 };
 
 export default Logo;

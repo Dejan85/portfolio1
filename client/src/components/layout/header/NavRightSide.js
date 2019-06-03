@@ -14,7 +14,6 @@ const NavRightSide = () => {
             to="skills"
             spy={true}
             smooth={"true"}
-            // offset={-400}
             duration={duration}>
             Skills
           </Link>
@@ -26,7 +25,6 @@ const NavRightSide = () => {
             to="portfolio"
             spy={true}
             smooth={"true"}
-            // offset={-400}
             duration={duration}>
             Portoflio
           </Link>
@@ -38,7 +36,6 @@ const NavRightSide = () => {
             to="blog"
             spy={true}
             smooth={"true"}
-            // offset={-400}
             duration={duration}>
             Blog
           </Link>
@@ -50,7 +47,6 @@ const NavRightSide = () => {
             to="contact"
             spy={true}
             smooth={"true"}
-            // offset={-400}
             duration={duration}>
             Contact
           </Link>

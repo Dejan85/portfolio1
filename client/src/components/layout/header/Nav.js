@@ -13,7 +13,6 @@ const Nav = () => {
           to="home"
           spy={true}
           smooth={"true"}
-          // offset={-400}
           duration={duration}>
           Home
         </Link>
@@ -25,7 +24,6 @@ const Nav = () => {
           to="about"
           spy={true}
           smooth={"true"}
-          // offset={-400}
           duration={duration}>
           About
         </Link>
@@ -37,7 +35,6 @@ const Nav = () => {
           to="services"
           spy={true}
           smooth={"true"}
-          // offset={-400}
           duration={duration}>
           Services
         </Link>
@@ -49,7 +46,6 @@ const Nav = () => {
           to="works"
           spy={true}
           smooth={"true"}
-          // offset={-400}
           duration={duration}>
           Popular
         </Link>
