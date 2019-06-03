@@ -12,7 +12,7 @@ function Home() {
       <div className="home__right">
         <div className="home__message border--none">
           <p className="home__p display--none">Hello I`am</p>
-          <h1 className="home__h1 color--dark ">Developer</h1>
+          <h1 className="home__h1 color--dark minus-margin-top">Developer</h1>
         </div>
       </div>
     </div>
