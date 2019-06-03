@@ -54,7 +54,7 @@ const Header = () => {
                   display: "none"
                 },
                 logo: {
-                  // color: "#212121",
+                  color: "#212121",
                   fontSize: "2.4rem"
                 }
               }
@@ -70,7 +70,7 @@ const Header = () => {
         {active ? <DropMenu /> : null}
         <div className="header__left" style={style.leftSide}>
           <Logo style={style.logo} />
-          <Nav />
+          <Nav xad={active} />
           <div id="nav-toggle" className={active ? "active" : ""}>
             <span onClick={handleDropMenu} />
           </div>
