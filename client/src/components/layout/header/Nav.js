@@ -1,15 +1,8 @@
 import React, { useState } from "react";
 import { Link } from "react-scroll";
 
-const Nav = ({ xad }) => {
-  // console.log(xad);
+const Nav = () => {
   const { duration } = useState(500);
-
-  const handleDrop = () => {
-    xad = "pusi kurac";
-    console.log(xad);
-    console.log("radi");
-  };
 
   return (
     <ul className="header__list">

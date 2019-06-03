@@ -6,63 +6,25 @@ import Nav from "./Nav";
 import NavRightSide from "./NavRightSide";
 import DropMenu from "./DropMenu";
 
-const Header = () => {
-  const [active, setActive] = useState(false);
-  const [style, setStyle] = useState({});
-  const headerRef = useRef();
+//custom hooks
+import { useNavHook } from "./hooks/NavHook";
 
-  const handleDropMenu = () => {
-    setActive(!active);
-  };
+const Header = () => {
+  const headerRef = useRef();
+  const [active, setActive] = useState(false);
+  const style = useNavHook(headerRef);
+
+  // const activeHook = useActiveHook(active);
 
   useEffect(() => {
     window.addEventListener("scroll", () => {
-      if (window.screen.availWidth > 980) {
-        setStyle(() => {
-          return window.pageYOffset > headerRef.current.offsetTop
-            ? {
-                header: {
-                  position: "fixed",
-                  paddingTop: "0rem"
-                },
-                leftSide: {
-                  background: "#29b6f6"
-                },
-                rightSide: {
-                  background: "#212121"
-                },
-                logo: {
-                  color: "#212121"
-                  // fontSize: "1.6rem"
-                }
-              }
-            : {};
-        });
-      } else {
-        setStyle(() => {
-          return window.pageYOffset > headerRef.current.offsetTop
-            ? {
-                header: {
-                  position: "fixed",
-                  paddingTop: "0rem",
-                  width: "100%"
-                },
-                leftSide: {
-                  background: "#29b6f6"
-                },
-                rightSide: {
-                  display: "none"
-                },
-                logo: {
-                  color: "#212121",
-                  fontSize: "2.4rem"
-                }
-              }
-            : {};
-        });
-      }
+      setActive(false);
     });
   }, []);
+
+  const handleDropMenu = () => {
+    return setActive(!active);
+  };
 
   return (
     <>
