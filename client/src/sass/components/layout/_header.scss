@@ -35,8 +35,13 @@
 
     @include respond(980) {
       width: 100%;
-      justify-content: space-around;
+      justify-content: space-between;
       align-items: center;
+      padding: 0 5rem;
+    }
+
+    @include respond(380) {
+      padding: 0 3rem;
     }
   }
 
