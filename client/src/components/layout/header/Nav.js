@@ -5,10 +5,10 @@ const Nav = () => {
   const { duration } = useState(500);
 
   return (
-    <ul className="home__list">
-      <li className="home__item">
+    <ul className="header__list">
+      <li className="header__item">
         <Link
-          className="home__link"
+          className="header__link"
           activeClass="active"
           to="home"
           spy={true}
@@ -18,9 +18,9 @@ const Nav = () => {
           Home
         </Link>
       </li>
-      <li className="home__item">
+      <li className="header__item">
         <Link
-          className="home__link"
+          className="header__link"
           activeClass="active"
           to="about"
           spy={true}
@@ -30,9 +30,9 @@ const Nav = () => {
           About
         </Link>
       </li>
-      <li className="home__item">
+      <li className="header__item">
         <Link
-          className="home__link"
+          className="header__link"
           activeClass="active"
           to="services"
           spy={true}
@@ -42,9 +42,9 @@ const Nav = () => {
           Services
         </Link>
       </li>
-      <li className="home__item">
+      <li className="header__item">
         <Link
-          className="home__link"
+          className="header__link"
           activeClass="active"
           to="works"
           spy={true}

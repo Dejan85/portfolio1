@@ -5,11 +5,11 @@ const NavRightSide = () => {
   const { duration } = useState(500);
 
   return (
-    <nav className="home__nav">
-      <ul className="home__list">
-        <li className="home__item">
+    <nav className="header__nav">
+      <ul className="header__list">
+        <li className="header__item">
           <Link
-            className="home__link home__link--right"
+            className="header__link header__link--right"
             activeClass="active"
             to="skills"
             spy={true}
@@ -19,9 +19,9 @@ const NavRightSide = () => {
             Skills
           </Link>
         </li>
-        <li className="home__item">
+        <li className="header__item">
           <Link
-            className="home__link home__link--right"
+            className="header__link header__link--right"
             activeClass="active"
             to="portfolio"
             spy={true}
@@ -31,9 +31,9 @@ const NavRightSide = () => {
             Portoflio
           </Link>
         </li>
-        <li className="home__item">
+        <li className="header__item">
           <Link
-            className="home__link home__link--right"
+            className="header__link header__link--right"
             activeClass="active"
             to="blog"
             spy={true}
@@ -43,9 +43,9 @@ const NavRightSide = () => {
             Blog
           </Link>
         </li>
-        <li className="home__item">
+        <li className="header__item">
           <Link
-            className="home__link home__link--right"
+            className="header__link header__link--right"
             activeClass="active"
             to="contact"
             spy={true}
