@@ -9,6 +9,10 @@
     @include global-p;
     // outline: 1px solid red;
     padding: 0rem 9.9rem;
+
+    @include respond(980) {
+      padding: 0rem;
+    }
   }
 
   &__content {
