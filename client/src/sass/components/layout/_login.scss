@@ -32,6 +32,7 @@
 
     &:focus {
       padding: 2rem 0 3px 0;
+      border-color: darken($color-primary, 20%);
       outline: none;
     }
   }
