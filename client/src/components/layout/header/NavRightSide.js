@@ -47,7 +47,7 @@ const NavRightSide = () => {
           spy={true}
           smooth={"true"}
           duration={duration}>
-          Contact
+          Kontakt
         </Link>
       </li>
     </ul>

@@ -14,7 +14,8 @@ const Nav = () => {
           spy={true}
           smooth={"true"}
           duration={duration}>
-          Home
+          {/* Home */}
+          Pocetna
         </Link>
       </li>
       <li className="header__item">
@@ -25,7 +26,7 @@ const Nav = () => {
           spy={true}
           smooth={"true"}
           duration={duration}>
-          About
+          {/* About */}O meni
         </Link>
       </li>
       <li className="header__item">
@@ -36,7 +37,8 @@ const Nav = () => {
           spy={true}
           smooth={"true"}
           duration={duration}>
-          Services
+          {/* Services */}
+          Usluge
         </Link>
       </li>
       <li className="header__item">
@@ -47,7 +49,7 @@ const Nav = () => {
           spy={true}
           smooth={"true"}
           duration={duration}>
-          Popular
+          {/* Popular */} Popularno
         </Link>
       </li>
     </ul>
