@@ -13,7 +13,7 @@ const Signup = () => {
           </div>
           <div className="login__input-holder">
             <label className="login__label">Email:</label>
-            <input className="login__input" type="password" />
+            <input className="login__input" type="email" />
           </div>
 
           <div className="login__input-holder">
@@ -27,11 +27,9 @@ const Signup = () => {
           </div>
 
           <div className="login__button-holder">
-            <button className="login__button" style={{ visibility: "hidden" }}>
-              Login
-            </button>
-            <Link className="login__button-register" to="/Signup">
-              Registruj se
+            <button className="login__button">Registruj se</button>
+            <Link className="login__button-register" to="/login">
+              Nazad
             </Link>
           </div>
         </form>

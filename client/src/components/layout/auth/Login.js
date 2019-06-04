@@ -9,7 +9,7 @@ const Login = () => {
         <form className="login__form">
           <div className="login__input-holder">
             <label className="login__label">Email:</label>
-            <input className="login__input" />
+            <input className="login__input" type="email" />
           </div>
           <div className="login__input-holder">
             <label className="login__label">Password:</label>
