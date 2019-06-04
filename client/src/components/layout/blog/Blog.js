@@ -16,7 +16,7 @@ class Blog extends Component {
         <h2 className="blog__h2">Moji Blogovi</h2>
         <Line />
         <p className="blog__p">
-          Pratite moje activnosti i generalno aktivnosti iz sveta IT industrije.
+          Pratite moje aktivnosti i generalno aktivnosti iz sveta IT industrije.
         </p>
 
         <div className="blog__content container">

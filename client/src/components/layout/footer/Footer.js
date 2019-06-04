@@ -5,38 +5,42 @@ const Footer = () => {
     <div className="footer">
       <div className="footer__content container">
         <div className="footer__box">
-          <h6 className="footer__h6">Lets talk about</h6>
+          {/* <h6 className="footer__h6">Lets talk about</h6> */}
+          <h6 className="footer__h6">Dovidjenja...</h6>
           <p className="footer__p">
             Bilo mi je izuzetno drago da smo se upoznali. Za sva pitanja
             osecajte se slobodno da me kontaktirate. Srdacan Pozdrav!
           </p>
         </div>
         <div className="footer__box">
-          <h6 className="footer__h6">Links</h6>
+          {/* <h6 className="footer__h6">Links</h6> */}
+          <h6 className="footer__h6">Linkovi</h6>
           <ul className="footer__list">
             <li className="footer__item">
               <i className="fas fa-long-arrow-alt-right" />
-              Home
+              {/* Home */}
+              Pocetna
             </li>
             <li className="footer__item">
               <i className="fas fa-long-arrow-alt-right" />
-              About
+              {/* About */}O meni
             </li>
             <li className="footer__item">
               <i className="fas fa-long-arrow-alt-right" />
-              Services
+              {/* Services */}
+              Usluge
             </li>
             <li className="footer__item">
               <i className="fas fa-long-arrow-alt-right" />
-              Home
+              Popularno
             </li>
             <li className="footer__item">
               <i className="fas fa-long-arrow-alt-right" />
-              Popular
+              Vestine
             </li>
             <li className="footer__item">
               <i className="fas fa-long-arrow-alt-right" />
-              Skills
+              Portfolio
             </li>
             <li className="footer__item">
               <i className="fas fa-long-arrow-alt-right" />
@@ -48,13 +52,14 @@ const Footer = () => {
             </li>
             <li className="footer__item">
               <i className="fas fa-long-arrow-alt-right" />
-              Contact
+              Kontakt
             </li>
           </ul>
         </div>
 
         <div className="footer__box ">
-          <h6 className="footer__h6">Have a Question?</h6>
+          {/* <h6 className="footer__h6">Have a Question?</h6> */}
+          <h6 className="footer__h6">Cujemo se</h6>
           <ul className="footer__list">
             <li className="footer__item">
               <i className="fab fa-google" />
@@ -76,7 +81,8 @@ const Footer = () => {
         </div>
 
         <div className="footer__box">
-          <h6 className="footer__h6">Services</h6>
+          {/* <h6 className="footer__h6">Services</h6> */}
+          <h6 className="footer__h6">Usluge</h6>
           <ul className="footer__list">
             <li className="footer__item">
               <i className="fas fa-long-arrow-alt-right" />

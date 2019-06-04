@@ -1,5 +1,5 @@
 import React from "react";
-import { Route } from "react-router-dom";
+import { Route, Switch } from "react-router-dom";
 
 // components
 import Header from "./components/layout/header/Header";
@@ -14,20 +14,28 @@ import Social from "./components/layout/social/Social";
 import Contact from "./components/layout/contact/Contact";
 import Footer from "./components/layout/footer/Footer";
 
+import Login from "./components/layout/auth/Login";
+import Dashboard from "./components/layout/dashboard/Dashboard";
+
 const Router = () => {
   return (
     <>
-      <Route exact to="/" component={Header} />
-      <Route exact to="/" component={Home} />
-      <Route exact to="/" component={About} />
-      <Route exact to="/" component={Services} />
-      <Route exact to="/" component={Works} />
-      {/* <Route exact to="/" component={Skills} /> */}
-      <Route exact to="/" component={Portfolio} />
-      <Route exact to="/" component={Social} />
-      <Route exact to="/" component={Blog} />
-      <Route exact to="/" component={Contact} />
-      <Route exact to="/" component={Footer} />
+      {/* main page */}
+      <Route exact path="/" component={Header} />
+      <Route exact path="/" component={Home} />
+      <Route exact path="/" component={About} />
+      <Route exact path="/" component={Services} />
+      <Route exact path="/" component={Works} />
+      {/* <Route exact path="/" component={Skills} /> */}
+      <Route exact path="/" component={Portfolio} />
+      <Route exact path="/" component={Social} />
+      <Route exact path="/" component={Blog} />
+      <Route exact path="/" component={Contact} />
+      <Route exact path="/" component={Footer} />
+
+      {/* dashboard */}
+      <Route exact path="/login" component={Login} />
+      <Route exact path="/dashboard" component={Dashboard} />
     </>
   );
 };

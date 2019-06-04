@@ -1,5 +1,6 @@
 import React, { useState } from "react";
-import { Link } from "react-scroll";
+import { Link as ScrollLink } from "react-scroll";
+import { Link } from "react-router-dom";
 
 const NavRightSide = () => {
   const { duration } = useState(500);
@@ -18,7 +19,7 @@ const NavRightSide = () => {
         </Link>
       </li> */}
       <li className="header__item">
-        <Link
+        <ScrollLink
           className="header__link header__link--right"
           activeClass="active"
           to="portfolio"
@@ -26,10 +27,10 @@ const NavRightSide = () => {
           smooth={"true"}
           duration={duration}>
           Portoflio
-        </Link>
+        </ScrollLink>
       </li>
       <li className="header__item">
-        <Link
+        <ScrollLink
           className="header__link header__link--right"
           activeClass="active"
           to="blog"
@@ -37,10 +38,10 @@ const NavRightSide = () => {
           smooth={"true"}
           duration={duration}>
           Blog
-        </Link>
+        </ScrollLink>
       </li>
       <li className="header__item">
-        <Link
+        <ScrollLink
           className="header__link header__link--right"
           activeClass="active"
           to="contact"
@@ -48,6 +49,19 @@ const NavRightSide = () => {
           smooth={"true"}
           duration={duration}>
           Kontakt
+        </ScrollLink>
+      </li>
+
+      <li className="header__item">
+        <Link
+          className="header__link header__link--right"
+          // activeClass="active"
+          to="/login"
+          // spy={true}
+          // smooth={"true"}
+          // duration={duration}
+        >
+          Login
         </Link>
       </li>
     </ul>
