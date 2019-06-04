@@ -17,10 +17,11 @@
   &__input-holder {
     display: flex;
     flex-direction: column;
+    padding-bottom: 3rem;
 
-    &:first-child {
-      padding-bottom: 3rem;
-    }
+    // &:first-child {
+    //   padding-bottom: 3rem;
+    // }
   }
 
   &__input {

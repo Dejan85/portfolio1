@@ -17,7 +17,7 @@ const Login = () => {
           </div>
           <div className="login__button-holder">
             <button className="login__button">Login</button>
-            <Link className="login__button-register" to="/register">
+            <Link className="login__button-register" to="/Signup">
               Registruj se.
             </Link>
           </div>

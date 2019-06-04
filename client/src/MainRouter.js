@@ -15,6 +15,7 @@ import Contact from "./components/layout/contact/Contact";
 import Footer from "./components/layout/footer/Footer";
 
 import Login from "./components/layout/auth/Login";
+import Signup from "./components/layout/auth/Signup";
 import Dashboard from "./components/layout/dashboard/Dashboard";
 
 const Router = () => {
@@ -35,6 +36,7 @@ const Router = () => {
 
       {/* dashboard */}
       <Route exact path="/login" component={Login} />
+      <Route exact path="/Signup" component={Signup} />
       <Route exact path="/dashboard" component={Dashboard} />
     </>
   );
