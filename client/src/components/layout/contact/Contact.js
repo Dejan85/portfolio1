@@ -13,11 +13,11 @@ class Contact extends Component {
     return (
       <div className="contact">
         <div className="contact__mask" />
-        <h2 className="contact__h2">Contact Me</h2>
+        {/* <h2 className="contact__h2">Contact Me</h2> */}
+        <h2 className="contact__h2">Cujemo se </h2>
         <Line />
         <p className="contact__p">
-          Lorem ipsum dolor sit amet, consectetuer adipiscing elit enean commodo
-          eget dolor aenean massa eget dolor aenean massa
+          Stojim na raspolaganju za sva vasa pitanja ili ponude.
         </p>
 
         <div className="contact__content container">

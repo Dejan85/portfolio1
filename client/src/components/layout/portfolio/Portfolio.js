@@ -34,11 +34,12 @@ class Portfolio extends Component {
     return (
       <div className="portfolio">
         {/* <Element name="portfolio" /> */}
-        <h2 className="portfolio__h2">All my works</h2>
+        {/* <h2 className="portfolio__h2">All my works</h2> */}
+        <h2 className="portfolio__h2">Svi moji radovi</h2>
         <Line />
-        <p className="portfolio__p">
-          Lorem ipsum dolor sit amet, consectetuer adipiscing elit enean commodo
-          eget dolor aenean massa eget dolor aenean massa
+        <p className="portfolio__p container">
+          Ovde su prikazani svi moje radovi do sada. Svaki rad mozete detaljno
+          pogledati, oceniti ga, iskomentarisati ili dati neku vasu sugestiju.
         </p>
         <div className="portfolio__content">
           <ul className="portfolio__nav container" ref="list">

@@ -17,11 +17,13 @@ class Works extends Component {
   render() {
     return (
       <div className="works container">
-        <h2 className="works__h2">MOST POPULAR</h2>
+        {/* <h2 className="works__h2">MOST POPULAR</h2> */}
+        <h2 className="works__h2">Najpopularnije </h2>
         <Line />
         <p className="works__p">
-          Lorem ipsum dolor sit amet, consectetuer adipiscing elit enean commodo
-          eget dolor aenean massa eget dolor aenean massa
+          Ovo su trenutno tri najpopularnije aplikacije koje sam uradio. Svakako
+          mozete glasati za aplikacije koje se vama najvise svidjaju. App sa
+          najvise glasova ce biti prikazane ovde.
         </p>
         <div className="works__content">
           <div className="works__card">
@@ -102,7 +104,8 @@ class Works extends Component {
         </div>
         <div className="works__discover">
           <Link className="works__discover--link" to="/">
-            Discover all projects
+            {/* Discover all projects */}
+            Vidite sve projekte
           </Link>
         </div>
       </div>

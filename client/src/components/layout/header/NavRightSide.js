@@ -6,7 +6,7 @@ const NavRightSide = () => {
 
   return (
     <ul className="header__list">
-      <li className="header__item">
+      {/* <li className="header__item">
         <Link
           className="header__link header__link--right"
           activeClass="active"
@@ -16,7 +16,7 @@ const NavRightSide = () => {
           duration={duration}>
           Skills
         </Link>
-      </li>
+      </li> */}
       <li className="header__item">
         <Link
           className="header__link header__link--right"

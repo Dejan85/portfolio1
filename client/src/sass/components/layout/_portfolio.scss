@@ -5,6 +5,12 @@
   padding-bottom: 15rem;
   @include line;
 
+  &__p {
+    @include global-p;
+    // outline: 1px solid red;
+    padding: 0rem 9.9rem;
+  }
+
   &__content {
     margin-top: 8rem;
   }
