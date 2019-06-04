@@ -36,8 +36,8 @@ class Services extends Component {
                 <h3 className="services__h3">Web Aplikacije</h3>
                 <p className="services__p">
                   Web aplikacije bazirane na frontendu radim skoro 2 godine.
-                  Najvise radim React js. Takodje radim izradu applikacija i u
-                  cistom Javascriptu.
+                  Najvise radim React js. Takodje radim applikacije i u cistom
+                  Javascriptu.
                 </p>
               </div>
             </div>
