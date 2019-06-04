@@ -53,14 +53,7 @@ const NavRightSide = () => {
       </li>
 
       <li className="header__item">
-        <Link
-          className="header__link header__link--right"
-          // activeClass="active"
-          to="/login"
-          // spy={true}
-          // smooth={"true"}
-          // duration={duration}
-        >
+        <Link className="header__link header__link--right" to="/login">
           Login
         </Link>
       </li>

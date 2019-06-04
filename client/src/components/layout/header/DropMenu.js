@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from "react";
-import { Link } from "react-scroll";
+import { Link as ScrollLink } from "react-scroll";
+import { Link } from "react-router-dom";
 
 const DropMenu = () => {
   const [transition, setTransition] = useState({});
@@ -16,7 +17,7 @@ const DropMenu = () => {
     <div className="drop__menu" style={transition}>
       <ul className="drop__menu__list">
         <li className="drop__menu__item">
-          <Link
+          <ScrollLink
             className="drop__menu__link"
             activeClass="active"
             to="home"
@@ -24,10 +25,10 @@ const DropMenu = () => {
             smooth={"true"}
             duration={duration}>
             Home
-          </Link>
+          </ScrollLink>
         </li>
         <li className="drop__menu__item">
-          <Link
+          <ScrollLink
             className="drop__menu__link"
             activeClass="active"
             to="about"
@@ -35,10 +36,10 @@ const DropMenu = () => {
             smooth={"true"}
             duration={duration}>
             About
-          </Link>
+          </ScrollLink>
         </li>
         <li className="drop__menu__item">
-          <Link
+          <ScrollLink
             className="drop__menu__link"
             activeClass="active"
             to="services"
@@ -46,10 +47,10 @@ const DropMenu = () => {
             smooth={"true"}
             duration={duration}>
             Services
-          </Link>
+          </ScrollLink>
         </li>
         <li className="drop__menu__item">
-          <Link
+          <ScrollLink
             className="drop__menu__link"
             activeClass="active"
             to="works"
@@ -57,10 +58,10 @@ const DropMenu = () => {
             smooth={"true"}
             duration={duration}>
             Popular
-          </Link>
+          </ScrollLink>
         </li>
         <li className="drop__menu__item">
-          <Link
+          <ScrollLink
             className="drop__menu__link"
             activeClass="active"
             to="skills"
@@ -68,10 +69,10 @@ const DropMenu = () => {
             smooth={"true"}
             duration={duration}>
             Skills
-          </Link>
+          </ScrollLink>
         </li>
         <li className="drop__menu__item">
-          <Link
+          <ScrollLink
             className="drop__menu__link"
             activeClass="active"
             to="portfolio"
@@ -79,10 +80,10 @@ const DropMenu = () => {
             smooth={"true"}
             duration={duration}>
             Portfolio
-          </Link>
+          </ScrollLink>
         </li>
         <li className="drop__menu__item">
-          <Link
+          <ScrollLink
             className="drop__menu__link"
             activeClass="active"
             to="blog"
@@ -90,10 +91,10 @@ const DropMenu = () => {
             smooth={"true"}
             duration={duration}>
             Blog
-          </Link>
+          </ScrollLink>
         </li>
         <li className="drop__menu__item">
-          <Link
+          <ScrollLink
             className="drop__menu__link"
             activeClass="active"
             to="contact"
@@ -101,6 +102,12 @@ const DropMenu = () => {
             smooth={"true"}
             duration={duration}>
             Contact
+          </ScrollLink>
+        </li>
+
+        <li className="drop__menu__item">
+          <Link className="drop__menu__link" to="/login">
+            Login
           </Link>
         </li>
       </ul>
