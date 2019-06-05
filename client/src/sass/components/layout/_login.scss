@@ -26,13 +26,13 @@
 
   &__input {
     border: none;
-    border-bottom: 2px solid $color-primary;
+    border-bottom: 1.4px solid darken($color-grey-light, 10%);
     padding: 1rem 0 3px 0;
     transition: all 0.5s;
 
     &:focus {
       padding: 2rem 0 3px 0;
-      border-color: darken($color-primary, 20%);
+      border-color: darken($color-primary, 0%);
       outline: none;
     }
   }
