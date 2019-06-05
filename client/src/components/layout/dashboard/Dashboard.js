@@ -1,6 +1,36 @@
-import React from "react";
+import React, { useState } from "react";
 
 const Dashboard = () => {
+  const [dropMenu, setDropMenu] = useState(true);
+  const [ul, setUl] = useState();
+  const [style, setStayle] = useState({});
+
+  const handleNavigation = () => {
+    setDropMenu(() => {
+      return !dropMenu;
+    });
+
+    if (dropMenu) {
+      setStayle({
+        transform: "rotate(180deg)",
+        transition: "all 0.5s"
+      });
+
+      setUl({
+        display: "none"
+      });
+    } else {
+      setStayle({
+        transform: "rotate(0deg)",
+        transition: "all 0.5s"
+      });
+
+      setUl({
+        display: "block"
+      });
+    }
+  };
+
   return (
     <div className="dashboard">
       <div className="dashboard__header">
@@ -8,7 +38,22 @@ const Dashboard = () => {
         <div className="dashboard__header-nav">Header nav</div>
       </div>
       <div className="dashboard__content">
-        <div className="dashboard__nav">nav</div>
+        <div className="dashboard__nav">
+          <ul className="dashobard__list">
+            <li className="dashboard__item" onClick={handleNavigation}>
+              <i className="fas fa-user-circle" />
+              <p>Account</p>
+              <i
+                className="fas fa-chevron-down dashboard__icon--arow"
+                style={style}
+              />
+            </li>
+            <ul style={ul}>
+              <li>Edit Account</li>
+              <li>Delete Account</li>
+            </ul>
+          </ul>
+        </div>
         <div className="dashboard__content-side">content</div>
       </div>
     </div>

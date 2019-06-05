@@ -6,4 +6,16 @@
     font-weight: 800;
     color: $color-primary;
   }
+
+  &__item {
+    color: $color-white-grey;
+    font-size: 1.3rem;
+    font-family: $font-4;
+  }
+
+  &__icon {
+    &--arow {
+      color: $color-primary;
+    }
+  }
 }
