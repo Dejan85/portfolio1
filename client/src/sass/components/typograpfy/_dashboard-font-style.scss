@@ -1,0 +1,9 @@
+.dashboard {
+  &__logo {
+    font-size: 2rem;
+    font-family: $font-12;
+    text-transform: uppercase;
+    font-weight: 800;
+    color: $color-primary;
+  }
+}
