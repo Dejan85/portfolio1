@@ -58,6 +58,7 @@
   &__sub-list {
     // display: none;
     transition: all 0.5s;
+    overflow: hidden;
   }
 
   &__content-side {
