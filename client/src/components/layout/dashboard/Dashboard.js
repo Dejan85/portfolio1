@@ -1,9 +1,16 @@
-import React, { useState } from "react";
+import React, { useState, useRef } from "react";
+
+//components
+import EditAccount from "./EditAccount";
+import DeleteAccount from "./DeleteAccount";
 
 const Dashboard = () => {
   const [dropMenu, setDropMenu] = useState(true);
   const [subList, setSubList] = useState();
   const [style, setStayle] = useState({});
+  const [subMenu, setSubMenu] = useState();
+  const editAcc = useRef("editaccount");
+  const delAcc = useRef("deleteaccount");
 
   const handleNavigation = () => {
     setDropMenu(() => {
@@ -17,8 +24,7 @@ const Dashboard = () => {
       });
 
       setSubList({
-        // display: "block",
-        height: "7.7rem",
+        height: "7.7rem"
       });
     } else {
       setStayle({
@@ -28,9 +34,13 @@ const Dashboard = () => {
 
       setSubList({
         height: "0px"
-        // display: "none"
       });
     }
+  };
+
+  const handleSubNav = e => {
+    const target = e.target.getAttribute("data-acc");
+    setSubMenu(target.replace(/\s/g, "").toLowerCase());
   };
 
   return (
@@ -51,12 +61,19 @@ const Dashboard = () => {
               />
             </li>
             <div className="dashboard__sub-list" style={subList}>
-              <li>Edit Account</li>
-              <li>Delete Account</li>
+              <li data-acc="editaccount" onClick={handleSubNav}>
+                Edit Account
+              </li>
+              <li data-acc="deleteaccount" onClick={handleSubNav}>
+                Delete Account
+              </li>
             </div>
           </ul>
         </div>
-        <div className="dashboard__content-side">content</div>
+        <div className="dashboard__content-side">
+          {subMenu === editAcc.current && <EditAccount />}
+          {subMenu === delAcc.current && <DeleteAccount />}
+        </div>
       </div>
     </div>
   );
