@@ -1,4 +1,4 @@
-import React, { useState, useRef } from "react";
+import React, { useState } from "react";
 
 // components
 import EditAccount from "./EditAccount";
@@ -11,9 +11,12 @@ const Dashboard = () => {
   const [subList, setSubList] = useState();
   const [style, setStayle] = useState({});
   const [subMenu, setSubMenu] = useState();
-  const editAcc = useRef("editaccount");
-  const delAcc = useRef("deleteaccount");
+  const [page] = useState({
+    edit: "editaccount",
+    del: "deleteaccount"
+  });
 
+  
   const handleNavigation = () => {
     setDropMenu(() => {
       return !dropMenu;
@@ -73,8 +76,8 @@ const Dashboard = () => {
           </ul>
         </div>
         <div className="dashboard__content-side">
-          {subMenu === editAcc.current && <EditAccount />}
-          {subMenu === delAcc.current && <DeleteAccount />}
+          {subMenu === page.edit && <EditAccount />}
+          {subMenu === page.del && <DeleteAccount />}
         </div>
       </div>
     </div>
