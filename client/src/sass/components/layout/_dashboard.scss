@@ -53,10 +53,11 @@
     p {
       padding: 0 10rem 0 1rem;
     }
+  }
 
-    ul {
-      display: none !important;
-    }
+  &__sub-list {
+    // display: none;
+    transition: all 0.5s;
   }
 
   &__content-side {

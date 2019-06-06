@@ -2,7 +2,7 @@ import React, { useState } from "react";
 
 const Dashboard = () => {
   const [dropMenu, setDropMenu] = useState(true);
-  const [ul, setUl] = useState();
+  const [subList, setSubList] = useState();
   const [style, setStayle] = useState({});
 
   const handleNavigation = () => {
@@ -16,8 +16,10 @@ const Dashboard = () => {
         transition: "all 0.5s"
       });
 
-      setUl({
-        display: "none"
+      setSubList({
+        // display: "block",
+        height: "100px",
+        background: "red"
       });
     } else {
       setStayle({
@@ -25,8 +27,9 @@ const Dashboard = () => {
         transition: "all 0.5s"
       });
 
-      setUl({
-        display: "block"
+      setSubList({
+        height: "0px"
+        // display: "none"
       });
     }
   };
@@ -48,10 +51,10 @@ const Dashboard = () => {
                 style={style}
               />
             </li>
-            <ul style={ul}>
+            <div className="dashboard__sub-list" style={subList}>
               <li>Edit Account</li>
               <li>Delete Account</li>
-            </ul>
+            </div>
           </ul>
         </div>
         <div className="dashboard__content-side">content</div>
