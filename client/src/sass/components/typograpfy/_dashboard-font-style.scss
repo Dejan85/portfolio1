@@ -7,10 +7,15 @@
     color: $color-primary;
   }
 
-  &__item {
+  &__item,
+  &__sub-list {
     color: $color-white-grey;
     font-size: 1.3rem;
     font-family: $font-4;
+  }
+
+  &__sub-list{
+    font-size: 1.2rem;
   }
 
   &__icon {

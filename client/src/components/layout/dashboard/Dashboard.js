@@ -18,8 +18,7 @@ const Dashboard = () => {
 
       setSubList({
         // display: "block",
-        height: "100px",
-        background: "red"
+        height: "7.7rem",
       });
     } else {
       setStayle({

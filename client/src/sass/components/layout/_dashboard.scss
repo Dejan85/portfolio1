@@ -6,7 +6,6 @@
 
   &__header {
     display: flex;
-    background: red;
     height: 63px;
   }
   &__logo {
@@ -56,9 +55,34 @@
   }
 
   &__sub-list {
-    // display: none;
+    height: 0;
     transition: all 0.5s;
     overflow: hidden;
+    background: lighten($color-dark-blue, 3%);
+
+    li {
+      display: flex;
+      align-items: center;
+      padding-left: 3.8rem;
+      height: 3.8rem;
+      transition: all 0.5s;
+      // padding-top: 1rem;
+      cursor: pointer;
+
+      &:hover {
+        background: darken($color-dark-blue, 3%);
+        // background: darken($color-primary , 3%);
+        color: darken($color-primary , 3%);
+      }
+    }
+
+    // &:nth-child(1) {
+    //   padding-top: 1rem;
+    // }
+
+    // &:nth-child(2){
+    //   padding-
+    // }
   }
 
   &__content-side {

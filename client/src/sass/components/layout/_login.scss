@@ -16,15 +16,14 @@
 
   &__input-holder {
     display: flex;
+    position: relative;
     flex-direction: column;
     padding-bottom: 3rem;
-
-    // &:first-child {
-    //   padding-bottom: 3rem;
-    // }
   }
 
   &__input {
+    // position: absolute;
+    width: 100%;
     border: none;
     border-bottom: 1.4px solid darken($color-grey-light, 10%);
     padding: 1rem 0 3px 0;
