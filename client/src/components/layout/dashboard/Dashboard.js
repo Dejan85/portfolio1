@@ -51,10 +51,10 @@ const Dashboard = () => {
                 style={style}
               />
             </li>
-            <div className="dashboard__sub-list" style={subList}>
+            <ul className="dashboard__sub-list" style={subList}>
               <li>Edit Account</li>
               <li>Delete Account</li>
-            </div>
+            </ul>
           </ul>
         </div>
         <div className="dashboard__content-side">content</div>
