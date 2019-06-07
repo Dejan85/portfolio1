@@ -1,9 +1,20 @@
 import React, { useState } from "react";
 
+// components
+import EditAccount from "./EditAccount";
+import DeleteAccount from "./DeleteAccount";
+
+// import { useHadnleSubNav } from "./hooks/handleSubNavHook";
+
 const Dashboard = () => {
   const [dropMenu, setDropMenu] = useState(true);
   const [subList, setSubList] = useState();
   const [style, setStayle] = useState({});
+  const [subMenu, setSubMenu] = useState();
+  const [page] = useState({
+    edit: "editaccount",
+    del: "deleteaccount"
+  });
 
   const handleNavigation = () => {
     setDropMenu(() => {
@@ -17,9 +28,7 @@ const Dashboard = () => {
       });
 
       setSubList({
-        // display: "block",
-        height: "100px",
-        background: "red"
+        height: "7.7rem"
       });
     } else {
       setStayle({
@@ -29,9 +38,13 @@ const Dashboard = () => {
 
       setSubList({
         height: "0px"
-        // display: "none"
       });
     }
+  };
+
+  const handleSubNav = e => {
+    const target = e.target.getAttribute("data-acc");
+    setSubMenu(target.replace(/\s/g, "").toLowerCase());
   };
 
   return (
@@ -51,13 +64,31 @@ const Dashboard = () => {
                 style={style}
               />
             </li>
-            <ul className="dashboard__sub-list" style={subList}>
-              <li>Edit Account</li>
-              <li>Delete Account</li>
-            </ul>
+            <div className="dashboard__sub-list" style={subList}>
+              <li data-acc="editaccount" onClick={handleSubNav}>
+                Edit Account
+              </li>
+              <li data-acc="deleteaccount" onClick={handleSubNav}>
+                Delete Account
+              </li>
+            </div>
           </ul>
         </div>
-        <div className="dashboard__content-side">content</div>
+        <div className="dashboard__content-side">
+          <div className="dashboard__info">
+            <i className="fas fa-user-edit dashboard__icon" />
+            <h1 className="dashboard__h1">Edit Account</h1>
+
+            <p className="dashboard__p">
+              Manage your todo's from the dashboard or here with additional
+              filters.
+            </p>
+          </div>
+          <div className="dashboard__content">
+            {subMenu === page.edit && <EditAccount />}
+            {subMenu === page.del && <DeleteAccount />}
+          </div>
+        </div>
       </div>
     </div>
   );

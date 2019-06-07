@@ -1,0 +1,44 @@
+.dashboard {
+  &__logo {
+    font-size: 2rem;
+    font-family: $font-12;
+    text-transform: uppercase;
+    font-weight: 800;
+    color: $color-primary;
+  }
+
+  &__item,
+  &__sub-list {
+    color: $color-white-grey;
+    font-size: 1.3rem;
+    font-family: $font-4;
+  }
+
+  &__sub-list {
+    font-size: 1.2rem;
+  }
+
+  &__icon {
+    &--arow {
+      color: $color-primary;
+    }
+  }
+
+  &__icon {
+    color: $color-grey-red;
+    font-size: 1.7rem;
+  }
+
+  &__h1 {
+    color: $color-primary;
+    font-family: $font-4;
+    font-size: 1.7rem;
+    font-weight: 600;
+  }
+
+  &__p {
+    color: $color-grey-red;
+    font-family: $font-4;
+    font-size: 1.28rem;
+  }
+}

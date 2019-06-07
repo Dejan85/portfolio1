@@ -6,7 +6,6 @@
 
   &__header {
     display: flex;
-    background: red;
     height: 63px;
   }
   &__logo {
@@ -28,14 +27,12 @@
   &__content {
     display: flex;
     height: 100%;
+    background: $color-white-blue;
   }
   &__nav {
     max-width: 22rem;
     width: 100%;
     background: lighten($color-dark-blue, 1%);
-  }
-
-  &__list {
   }
 
   &__item {
@@ -56,14 +53,46 @@
   }
 
   &__sub-list {
-    // display: none;
+    height: 0;
     transition: all 0.5s;
     height: 0;
     overflow: hidden;
+    background: lighten($color-dark-blue, 3%);
+
+    li {
+      display: flex;
+      align-items: center;
+      padding-left: 3.8rem;
+      height: 3.8rem;
+      transition: all 0.5s;
+      // padding-top: 1rem;
+      cursor: pointer;
+
+      &:hover {
+        background: darken($color-dark-blue, 3%);
+        // background: darken($color-primary , 3%);
+        color: darken($color-primary, 3%);
+      }
+    }
   }
 
   &__content-side {
     width: 100%;
     background: $color-white-blue;
+    padding-left: 4.5rem;
+  }
+
+  &__info {
+    padding-top: 4.5rem;
+  }
+
+  &__h1 {
+    display: inline;
+    padding-left: 5px;
+    vertical-align: -1.8px;
+  }
+
+  &__p {
+    padding-top: 7px;
   }
 }
