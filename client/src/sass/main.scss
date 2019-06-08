@@ -18,7 +18,7 @@
 @import "./components/layout/blog";
 @import "./components/layout/contact";
 @import "./components/layout/footer";
-@import "./components/layout/login";
+@import "./components/layout/auth/login";
 
 // dashboard
 @import "./components/layout/dashboard/dashboard";
@@ -36,5 +36,8 @@
 @import "./components/typograpfy/blog-font-style";
 @import "./components/typograpfy/contact-font-style";
 @import "./components/typograpfy/footer-font-style";
-@import "./components/typograpfy/login-font-style";
+
+// dashboard
+@import "./components/typograpfy/auth/login-font-style";
 @import "./components/typograpfy/dashboard/dashboard-font-style";
+@import "./components/typograpfy/dashboard/account.-font-style";

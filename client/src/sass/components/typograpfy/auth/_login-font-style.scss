@@ -1,0 +1,10 @@
+.login {
+  &__h1 {
+    font-size: 2.6rem;
+    font-family: $font-4;
+    font-weight: 700;
+    color: $color-dark;
+  }
+
+  @include form-submit-button-font-style(1.5rem, 1.4rem, 1.5rem, 1.4rem);
+}

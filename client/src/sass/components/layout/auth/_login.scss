@@ -1,0 +1,33 @@
+.login {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100vh;
+
+  &__content {
+    width: 70%;
+  }
+
+  &__h1 {
+    padding-bottom: 10rem;
+  }
+
+  @include input;
+
+  @include form-submit-button(10rem);
+
+  &__button-register {
+    display: block;
+    transition: all, 0.5s;
+    padding: 1rem;
+    width: 15rem;
+    border: 1px solid $color-dark;
+
+    &:hover {
+      background: darken(white, 20%);
+      border: none;
+    }
+  }
+}

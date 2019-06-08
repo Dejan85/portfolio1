@@ -251,3 +251,81 @@ $breakpoint argument choices:
     transform: perspective(600px) rotateY(0deg);
   }
 }
+
+@mixin input {
+  &__input-holder {
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    padding-bottom: 3rem;
+  }
+
+  &__input {
+    width: 100%;
+    border: none;
+    border-bottom: 1.4px solid darken($color-grey-light, 10%);
+    padding: 1rem 0 3px 0;
+    transition: all 0.5s;
+
+    &:focus {
+      // padding: 2rem 0 3px 0;
+      border-color: darken($color-primary, 0%);
+      outline: none;
+    }
+  }
+}
+
+@mixin form-submit-button($margin-top) {
+  &__button-holder {
+    display: flex;
+    margin-top: $margin-top;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  &__button {
+    border: none;
+    background: $color-primary;
+    width: 15rem;
+    padding: 1rem;
+    cursor: pointer;
+    transition: all 0.5s;
+
+    &:hover {
+      background: darken($color-primary, 20%);
+      color: lighten($color-primary, 90%);
+    }
+  }
+}
+
+@mixin form-submit-button-font-style(
+  $fontSizeLabel,
+  $fontSizeInput,
+  $fontSizeButton,
+  $fontSizeButton-register
+) {
+  &__label {
+    font-size: $fontSizeLabel;
+    font-family: $font-4;
+    color: $color-grey;
+  }
+
+  &__input {
+    font-size: $fontSizeInput;
+  }
+
+  &__button {
+    font-size: $fontSizeButton;
+    font-family: $font-4;
+    font-weight: 600;
+  }
+
+  &__button-register {
+    font-size: $fontSizeButton-register;
+    font-family: $font-4;
+    font-weight: 700;
+    color: $color-dark;
+    text-decoration: none;
+    text-align: center;
+  }
+}
