@@ -82,7 +82,7 @@ const Dashboard = () => {
         <div className="dashboard__content-side">
           <div className="dashboard__info">
             {info.i}
-            <h1 className="dashboard__h1">{info.h1}</h1>
+            {info.h1}
             <p className="dashboard__p">{info.p}</p>
           </div>
           <div className="dashboard__content">

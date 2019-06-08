@@ -55,9 +55,10 @@
     border: none;
     width: 10rem;
     padding: 0.7rem;
-    margin-left: 1rem;
+    margin-right: 6rem;
     cursor: pointer;
     transition: all 0.5s;
+    align-self: flex-end;
 
     &:hover {
       background: darken($color-red-normal, 10%);
