@@ -3,6 +3,7 @@
   flex-direction: column;
   height: 100vh;
   background: grey;
+  overflow: hidden;
 
   &__header {
     display: flex;
@@ -63,7 +64,7 @@
       display: flex;
       align-items: center;
       padding-left: 3.8rem;
-      height: 3.8rem;
+      height: 3rem;
       transition: all 0.5s;
       // padding-top: 1rem;
       cursor: pointer;

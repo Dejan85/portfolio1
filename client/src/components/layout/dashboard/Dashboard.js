@@ -1,8 +1,11 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 
 // components
 import EditAccount from "./EditAccount";
 import DeleteAccount from "./DeleteAccount";
+
+// custom hooks
+import { useInfoHook } from "./hooks/infoHook";
 
 // import { useHadnleSubNav } from "./hooks/handleSubNavHook";
 
@@ -28,7 +31,7 @@ const Dashboard = () => {
       });
 
       setSubList({
-        height: "7.7rem"
+        height: "6rem"
       });
     } else {
       setStayle({
@@ -46,6 +49,8 @@ const Dashboard = () => {
     const target = e.target.getAttribute("data-acc");
     setSubMenu(target.replace(/\s/g, "").toLowerCase());
   };
+
+  const info = useInfoHook(subMenu, page.edit, page.del);
 
   return (
     <div className="dashboard">
@@ -76,13 +81,9 @@ const Dashboard = () => {
         </div>
         <div className="dashboard__content-side">
           <div className="dashboard__info">
-            <i className="fas fa-user-edit dashboard__icon" />
-            <h1 className="dashboard__h1">Edit Account</h1>
-
-            <p className="dashboard__p">
-              Manage your todo's from the dashboard or here with additional
-              filters.
-            </p>
+            {info.i}
+            <h1 className="dashboard__h1">{info.h1}</h1>
+            <p className="dashboard__p">{info.p}</p>
           </div>
           <div className="dashboard__content">
             {subMenu === page.edit && <EditAccount />}
