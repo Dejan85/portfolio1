@@ -1,3 +1,26 @@
 .edit-account {
   @include form-submit-button-font-style(1.2rem, 1.3rem, 1.2rem, 0);
 }
+
+.delete-account {
+  &__name {
+    font-family: $font-4;
+    font-size: 1.7rem;
+    font-weight: 600;
+    color: $color-red-dark;
+  }
+
+  &__message {
+    font-family: $font-4;
+    font-size: 1.4rem;
+    color: $color-red-dark;
+  }
+
+  &__button {
+    color: $color-white;
+
+    &:hover {
+      color: darken($color-white, 90%);
+    }
+  }
+}
