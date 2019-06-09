@@ -42,4 +42,12 @@
     font-family: $font-4;
     font-size: 1.28rem;
   }
+
+  &__select {
+    color: $color-grey;
+
+    option {
+      font-size: 1.2rem;
+    }
+  }
 }

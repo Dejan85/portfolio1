@@ -75,7 +75,7 @@ const Dashboard = () => {
             )}
             {subMenu === page.del && <DeleteAccount />}
             {subMenu === page.addPro && (
-              <AddProject formHeight={{ height: "80rem" }} />
+              <AddProject formHeight={{ height: "95rem" }} />
             )}
             {subMenu === page.editPro && <EditProject />}
             {subMenu === page.delPro && <DeleteProject />}

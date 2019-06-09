@@ -14,6 +14,9 @@ const AddProject = ({ formHeight }) => {
         <Input text={"Image"} />
         <Select text={"Type"} />
         <TextArea text={"Description"} />
+        <div className="form__button-holder">
+          <button className="form__button">Submit</button>
+        </div>
       </form>
     </div>
   );
