@@ -1,27 +1,18 @@
 import React from "react";
 
-const EditAccount = () => {
+// components
+import Input from "../utility/Input";
+
+const EditAccount = ({ formHeight }) => {
   return (
-    <div className="edit-account">
-      <form className="edit-account__form">
-        <div className="edit-account__input-holder">
-          <label className="edit-account__label">Name</label>
-          <input className="edit-account__input" />
-        </div>
-        <div className="edit-account__input-holder">
-          <label className="edit-account__label">Email</label>
-          <input className="edit-account__input" />
-        </div>
-        <div className="edit-account__input-holder">
-          <label className="edit-account__label">Password</label>
-          <input className="edit-account__input" />
-        </div>
-        <div className="edit-account__input-holder">
-          <label className="edit-account__label">Avatar</label>
-          <input className="edit-account__input" />
-        </div>
-        <div className="edit-account__button-holder">
-          <button className="edit-account__button">Submit</button>
+    <div className="form" style={formHeight}>
+      <form className="form__container">
+        <Input text={"Name"} />
+        <Input text={"Email"} />
+        <Input text={"Password"} />
+        <Input text={"Avatar"} />
+        <div className="form__button-holder">
+          <button className="form__button">Submit</button>
         </div>
       </form>
     </div>

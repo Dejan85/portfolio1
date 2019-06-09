@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { Link } from "react-router-dom";
 
 // components
 import EditAccount from "./account/EditAccount";
@@ -38,7 +39,11 @@ const Dashboard = () => {
   return (
     <div className="dashboard">
       <div className="dashboard__header">
-        <div className="dashboard__logo">Devxad</div>
+        <div className="dashboard__logo">
+          <Link className="dashboard__logo" to="/">
+            Devxad
+          </Link>
+        </div>
         <div className="dashboard__header-nav">Header nav</div>
       </div>
       <div className="dashboard__content">
@@ -65,9 +70,13 @@ const Dashboard = () => {
             <p className="dashboard__p">{info.p}</p>
           </div>
           <div className="dashboard__content">
-            {subMenu === page.edit && <EditAccount />}
+            {subMenu === page.edit && (
+              <EditAccount formHeight={{ height: "40rem" }} />
+            )}
             {subMenu === page.del && <DeleteAccount />}
-            {subMenu === page.addPro && <AddProject />}
+            {subMenu === page.addPro && (
+              <AddProject formHeight={{ height: "80rem" }} />
+            )}
             {subMenu === page.editPro && <EditProject />}
             {subMenu === page.delPro && <DeleteProject />}
           </div>
