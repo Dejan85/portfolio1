@@ -1,12 +1,19 @@
 .dashboard {
   display: flex;
-  flex-direction: column;
   height: 100vh;
-  background: grey;
   overflow: hidden;
 
-  &__header {
-    display: flex;
+  &__left {
+    max-width: 22rem;
+    width: 100%;
+    background: lighten($color-dark-blue, 1%);
+  }
+
+  &__right {
+    width: 100%;
+    background: $color-white-blue;
+    padding-bottom: 3rem;
+    overflow: auto;
   }
 
   &__logo {
@@ -16,22 +23,22 @@
     background: $color-dark-blue;
     max-width: 22rem;
     width: 100%;
-    padding: 9px 0;
+    // padding: 9px 0;
+    height: 5.5rem;
   }
 
   &__header-nav {
     display: flex;
+    position: fixed;
+    z-index: 100;
     align-items: center;
     background: $color-white;
     width: 100%;
     border-bottom: 1px solid #d2d2d2;
+    // padding: 9px 0;
+    height: 5.5rem;
+
     // box-shadow: 0px 1px 2rem rgba(#d2d2d2, 0.15);
-  }
-  &__content {
-    display: flex;
-    // height: 130%;
-    height: 100%;
-    background: $color-white-blue;
   }
 
   &__nav {
@@ -84,8 +91,7 @@
   &__content-side {
     width: 100%;
     background: $color-white-blue;
-    padding: 0 4.5rem;
-    overflow: auto;
+    padding: 5rem 4.5rem 0 4.5rem;
   }
 
   &__info {

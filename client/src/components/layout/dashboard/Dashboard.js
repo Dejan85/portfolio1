@@ -38,15 +38,12 @@ const Dashboard = () => {
 
   return (
     <div className="dashboard">
-      <div className="dashboard__header">
+      <div className="dashboard__left">
         <div className="dashboard__logo">
           <Link className="dashboard__logo" to="/">
             Devxad
           </Link>
         </div>
-        <div className="dashboard__header-nav">Header nav</div>
-      </div>
-      <div className="dashboard__content">
         <div className="dashboard__nav">
           <DashboardNav
             name={"Account"}
@@ -62,7 +59,9 @@ const Dashboard = () => {
             height={"9rem"}
           />
         </div>
-
+      </div>
+      <div className="dashboard__right">
+        <div className="dashboard__header-nav">Header nav</div>
         <div className="dashboard__content-side">
           <div className="dashboard__info">
             {info.i}
@@ -75,10 +74,10 @@ const Dashboard = () => {
             )}
             {subMenu === page.del && <DeleteAccount />}
             {subMenu === page.addPro && (
-              <AddProject formHeight={{ height: "95rem" }} />
+              <AddProject formHeight={{ height: "90rem" }} />
             )}
             {subMenu === page.editPro && (
-              <EditProject formHeight={{ height: "95rem" }} />
+              <EditProject formHeight={{ height: "90rem" }} />
             )}
             {subMenu === page.delPro && <DeleteProject />}
           </div>
