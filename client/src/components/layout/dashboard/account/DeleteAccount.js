@@ -1,7 +1,7 @@
 import React from "react";
 
 // image
-import avatar from "../../../sass/images/avatar.jpg";
+import avatar from "../../../../sass/images/avatar.jpg";
 
 const DeleteAccount = () => {
   return (

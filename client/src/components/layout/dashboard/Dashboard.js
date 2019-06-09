@@ -1,56 +1,39 @@
 import React, { useState } from "react";
 
 // components
-import EditAccount from "./EditAccount";
-import DeleteAccount from "./DeleteAccount";
+import EditAccount from "./account/EditAccount";
+import DeleteAccount from "./account/DeleteAccount";
+import AddProject from "./projects/AddProject";
+import EditProject from "./projects/EditProject";
+import DeleteProject from "./projects/DeleteProject";
+import DashboardNav from "./DashboardNav";
 
 // custom hooks
 import { useInfoHook } from "./hooks/infoHook";
 
-// import { useHadnleSubNav } from "./hooks/handleSubNavHook";
-
 const Dashboard = () => {
-  const [dropMenu, setDropMenu] = useState(true);
-  const [subList, setSubList] = useState();
-  const [style, setStayle] = useState({});
   const [subMenu, setSubMenu] = useState();
   const [page] = useState({
     edit: "editaccount",
-    del: "deleteaccount"
+    del: "deleteaccount",
+    addPro: "addproject",
+    editPro: "editproject",
+    delPro: "deleteproject"
   });
-
-  const handleNavigation = () => {
-    setDropMenu(() => {
-      return !dropMenu;
-    });
-
-    if (dropMenu) {
-      setStayle({
-        transform: "rotate(180deg)",
-        transition: "all 0.5s"
-      });
-
-      setSubList({
-        height: "6rem"
-      });
-    } else {
-      setStayle({
-        transform: "rotate(0deg)",
-        transition: "all 0.5s"
-      });
-
-      setSubList({
-        height: "0px"
-      });
-    }
-  };
 
   const handleSubNav = e => {
     const target = e.target.getAttribute("data-acc");
     setSubMenu(target.replace(/\s/g, "").toLowerCase());
   };
 
-  const info = useInfoHook(subMenu, page.edit, page.del);
+  const info = useInfoHook(
+    subMenu,
+    page.edit,
+    page.del,
+    page.addPro,
+    page.editPro,
+    page.delPro
+  );
 
   return (
     <div className="dashboard">
@@ -60,25 +43,21 @@ const Dashboard = () => {
       </div>
       <div className="dashboard__content">
         <div className="dashboard__nav">
-          <ul className="dashobard__list">
-            <li className="dashboard__item" onClick={handleNavigation}>
-              <i className="fas fa-user-circle" />
-              <p>Account</p>
-              <i
-                className="fas fa-chevron-down dashboard__icon--arow"
-                style={style}
-              />
-            </li>
-            <div className="dashboard__sub-list" style={subList}>
-              <li data-acc="editaccount" onClick={handleSubNav}>
-                Edit Account
-              </li>
-              <li data-acc="deleteaccount" onClick={handleSubNav}>
-                Delete Account
-              </li>
-            </div>
-          </ul>
+          <DashboardNav
+            name={"Account"}
+            handleSubNav={handleSubNav}
+            liName={["Edit Account", " Delete Account"]}
+            height={"6rem"}
+          />
+
+          <DashboardNav
+            name={"Projects"}
+            handleSubNav={handleSubNav}
+            liName={["Add Project", "Edit Project", " Delete Project"]}
+            height={"9rem"}
+          />
         </div>
+
         <div className="dashboard__content-side">
           <div className="dashboard__info">
             {info.i}
@@ -88,6 +67,9 @@ const Dashboard = () => {
           <div className="dashboard__content">
             {subMenu === page.edit && <EditAccount />}
             {subMenu === page.del && <DeleteAccount />}
+            {subMenu === page.addPro && <AddProject />}
+            {subMenu === page.editPro && <EditProject />}
+            {subMenu === page.delPro && <DeleteProject />}
           </div>
         </div>
       </div>
