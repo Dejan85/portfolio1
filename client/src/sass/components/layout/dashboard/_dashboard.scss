@@ -18,6 +18,7 @@
     width: 100%;
     padding: 9px 0;
   }
+
   &__header-nav {
     display: flex;
     align-items: center;
@@ -28,9 +29,11 @@
   }
   &__content {
     display: flex;
+    // height: 130%;
     height: 100%;
     background: $color-white-blue;
   }
+
   &__nav {
     max-width: 22rem;
     width: 100%;
