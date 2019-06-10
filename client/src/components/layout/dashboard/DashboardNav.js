@@ -14,20 +14,20 @@ const DashboardNav = ({ name, handleSubNav, liName, height }) => {
     if (dropMenu) {
       setStayle({
         transform: "rotate(180deg)",
-        transition: "all 0.5s"
+        transition: "all 0.5s",
       });
 
       setSubList({
-        height: `${height}`
+        height: `${height}`,
       });
     } else {
       setStayle({
         transform: "rotate(0deg)",
-        transition: "all 0.5s"
+        transition: "all 0.5s",
       });
 
       setSubList({
-        height: "0px"
+        height: "0px",
       });
     }
   };
@@ -59,7 +59,7 @@ DashboardNav.propTypes = {
   name: PropTypes.string,
   handleSubNav: PropTypes.func,
   liName: PropTypes.array,
-  height: PropTypes.string
+  height: PropTypes.string,
 };
 
 export default DashboardNav;

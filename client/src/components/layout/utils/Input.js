@@ -11,7 +11,7 @@ const Input = ({ text }) => {
 };
 
 Input.propTypes = {
-  text: PropTypes.string
+  text: PropTypes.string,
 };
 
 export default Input;

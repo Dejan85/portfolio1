@@ -2,7 +2,7 @@ import React, { Component } from "react";
 import { Link } from "react-router-dom";
 
 // components
-import Line from "../utilities/Line";
+import Line from "../utils/Line";
 
 // image
 import pigGame_grey from "../../../sass/images/pigGame_grey.jpg";

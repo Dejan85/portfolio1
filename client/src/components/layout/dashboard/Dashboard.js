@@ -19,7 +19,7 @@ const Dashboard = () => {
     del: "deleteaccount",
     addPro: "addproject",
     editPro: "editproject",
-    delPro: "deleteproject"
+    delPro: "deleteproject",
   });
 
   const handleSubNav = e => {

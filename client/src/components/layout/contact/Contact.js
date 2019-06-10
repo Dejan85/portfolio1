@@ -6,7 +6,7 @@ import avatar_2 from "../../../sass/images/avatar_2.jpg";
 // import avatar_4 from "../../../sass/images/avatar_4.jpg";
 
 // component
-import Line from "../utilities/Line";
+import Line from "../utils/Line";
 
 class Contact extends Component {
   render() {

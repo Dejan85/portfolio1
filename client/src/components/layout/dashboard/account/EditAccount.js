@@ -1,7 +1,7 @@
 import React from "react";
 
 // components
-import Input from "../utility/Input";
+import Input from "../../utils/Input";
 
 const EditAccount = ({ formHeight }) => {
   return (

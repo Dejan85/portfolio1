@@ -11,7 +11,7 @@ import colorGame_grey from "../../../sass/images/colorGame_grey.jpg";
 import toDoApp_grey from "../../../sass/images/toDoApp_grey.jpg";
 
 // components
-import Line from "../utilities/Line";
+import Line from "../utils/Line";
 
 class Works extends Component {
   render() {

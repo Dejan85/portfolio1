@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 
 //components
-import Line from "../utilities/Line";
+import Line from "../utils/Line";
 
 class About extends Component {
   render() {

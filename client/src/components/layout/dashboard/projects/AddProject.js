@@ -1,9 +1,9 @@
 import React from "react";
 
 // components
-import Input from "../utility/Input";
-import TextArea from "../utility/TextArea";
-import Select from "../utility/Select";
+import Input from "../../utils/Input";
+import TextArea from "../../utils/TextArea";
+import Select from "../../utils/Select";
 
 const AddProject = ({ formHeight }) => {
   return (

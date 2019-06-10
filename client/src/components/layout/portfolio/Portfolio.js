@@ -13,7 +13,7 @@ import toDoApp_grey from "../../../sass/images/toDoApp_grey.jpg";
 
 // import preview from '../../../sass/images/preview.svg';
 //components
-import Line from "../utilities/Line";
+import Line from "../utils/Line";
 
 class Portfolio extends Component {
   constructor() {
