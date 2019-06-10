@@ -13,6 +13,8 @@ const Signup = () => {
   });
   const [form, setForm] = useState();
 
+  const error = useErrorHandle(form);
+
 
   const submit = e => {
     e.preventDefault();
@@ -20,16 +22,12 @@ const Signup = () => {
   };
 
 
-  const error = useErrorHandle(form);
-
-  console.log(error);
-
-
   const handleChange = (e) => {
     setInput({
       ...input,
       [e.target.name]: e.target.value
     })
+    setForm("This string will reset errors")
   }
 
   return (
@@ -45,6 +43,8 @@ const Signup = () => {
               name="name"
               onChange={handleChange}
             />
+            {error.name}
+
           </div>
           <div className="login__input-holder">
             <label className="login__label">Email:</label>
@@ -67,6 +67,8 @@ const Signup = () => {
               name="password"
               onChange={handleChange}
             />
+            {error.password}
+
           </div>
 
           <div className="login__input-holder">
@@ -78,6 +80,7 @@ const Signup = () => {
               name="confirmPassword"
               onChange={handleChange}
             />
+            {error.confirmPassword}
           </div>
 
           <div className="login__button-holder">
