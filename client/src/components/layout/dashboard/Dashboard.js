@@ -61,7 +61,10 @@ const Dashboard = () => {
         </div>
       </div>
       <div className="dashboard__right">
-        <div className="dashboard__header-nav">Header nav</div>
+        <div className="dashboard__header-nav">
+          <p className="dashboard__header-p">Dashboard</p> /
+          <span className="dashboard__header-span">Projects</span>
+        </div>
         <div className="dashboard__content-side">
           <div className="dashboard__info">
             {info.i}

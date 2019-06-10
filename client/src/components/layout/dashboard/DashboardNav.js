@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import PropTypes from "prop-types";
 
 const DashboardNav = ({ name, handleSubNav, liName, height }) => {
   const [subList, setSubList] = useState();
@@ -52,6 +53,13 @@ const DashboardNav = ({ name, handleSubNav, liName, height }) => {
       </ul>
     </ul>
   );
+};
+
+DashboardNav.propTypes = {
+  name: PropTypes.string,
+  handleSubNav: PropTypes.func,
+  liName: PropTypes.array,
+  height: PropTypes.string
 };
 
 export default DashboardNav;

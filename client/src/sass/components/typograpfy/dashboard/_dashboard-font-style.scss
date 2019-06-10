@@ -8,6 +8,19 @@
     text-decoration: none;
   }
 
+  &__header-p {
+    color: $color-primary;
+    font-size: 1.3rem;
+    font-family: $font-4;
+    // font-weight: 600;
+  }
+
+  &__header-span {
+    font-size: 1.3rem;
+    font-family: $font-4;
+    color: $color-grey;
+  }
+
   &__item,
   &__sub-list {
     color: $color-white-grey;
