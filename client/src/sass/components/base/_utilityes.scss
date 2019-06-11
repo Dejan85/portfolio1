@@ -18,3 +18,10 @@
   background: $color-primary;
   color: white;
 }
+
+.validation__error{
+  position: absolute;
+  margin-top: 63px;
+  color: red;
+  font-family: $font-4;
+}

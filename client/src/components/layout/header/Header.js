@@ -7,7 +7,7 @@ import NavRightSide from "./NavRightSide";
 import DropMenu from "./DropMenu";
 
 //custom hooks
-import { useNavHook } from "./hooks/NavHook";
+import { useNavHook } from "../../customHooks/navHook";
 
 const Header = () => {
   const headerRef = useRef();

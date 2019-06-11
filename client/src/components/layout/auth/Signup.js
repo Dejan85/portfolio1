@@ -2,7 +2,7 @@ import React, { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 
 // hooks
-import { useErrorHandle } from "../../customHooks/errorHandle";
+import { useErrorHandle } from "../../customHooks/errorHandleHook";
 
 const Signup = () => {
   const [input, setInput] = useState({
@@ -19,15 +19,20 @@ const Signup = () => {
   const submit = e => {
     e.preventDefault();
     setForm(input);
-  };
 
+    if (error && !error.name && !error.email && !error.password && !error.confirmPassword && !error.passwordMatch) {
+      console.log(error);
+    }
+
+
+  };
 
   const handleChange = (e) => {
     setInput({
       ...input,
       [e.target.name]: e.target.value
     })
-    setForm("This string will reset errors")
+    // setForm({})
   }
 
   return (

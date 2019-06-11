@@ -10,7 +10,7 @@ import DeleteProject from "./projects/DeleteProject";
 import DashboardNav from "./DashboardNav";
 
 // custom hooks
-import { useInfoHook } from "./hooks/infoHook";
+import { useInfoHook } from "../../customHooks/infoHook";
 
 const Dashboard = () => {
   const [subMenu, setSubMenu] = useState();
